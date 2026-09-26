@@ -5,6 +5,26 @@
          <lastmod>2026-09-26</lastmod>
     </url>
     <url>
+         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/chapter1_storage_elevation/</loc>
+         <lastmod>2026-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/chapter2_basin_hydroprep/</loc>
+         <lastmod>2026-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/chapter3_dambreak_analysis/</loc>
+         <lastmod>2026-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/chapter4_idf_analysis/</loc>
+         <lastmod>2026-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/chapter5_maps_generation/</loc>
+         <lastmod>2026-09-26</lastmod>
+    </url>
+    <url>
          <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/maps/</loc>
          <lastmod>2026-09-26</lastmod>
     </url>
@@ -14,26 +34,6 @@
     </url>
     <url>
          <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/report_content/</loc>
-         <lastmod>2026-09-26</lastmod>
-    </url>
-    <url>
-         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/notebooks/01_Storage_Elevation_Analysis/</loc>
-         <lastmod>2026-09-26</lastmod>
-    </url>
-    <url>
-         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/notebooks/02_DBA_Basin_HydroPrep/</loc>
-         <lastmod>2026-09-26</lastmod>
-    </url>
-    <url>
-         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/notebooks/03_DamBreak_Analysis/</loc>
-         <lastmod>2026-09-26</lastmod>
-    </url>
-    <url>
-         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/notebooks/04_IDF_Analysis_Panvel/</loc>
-         <lastmod>2026-09-26</lastmod>
-    </url>
-    <url>
-         <loc>https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/notebooks/05_Maps_GoogleColab/</loc>
          <lastmod>2026-09-26</lastmod>
     </url>
 </urlset>

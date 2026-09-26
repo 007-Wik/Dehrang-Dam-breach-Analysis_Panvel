@@ -2,14 +2,17 @@
 
 This final chapter focuses on creating high-quality, professional cartographic maps of the study area, hazard zones, and flood extents.
 
-## Objective
-To generate publication-ready maps presenting the results of the hydrological and dam break analyses.
+## 8. Cartographic Maps (Notebook 05)
 
-## Methodology Highlights
-- **Map Projections:** Maps are projected to UTM (EPSG auto-detected from input rasters) to preserve area and distance measurements.
-- **Topographic Styling:** Applies hillshade computed from the Copernicus 30 m DEM using proper azimuth and altitude parameters.
-- **Cartographic Elements:** Standardized grids (decimal degrees), north arrows, scale bars, and legends are added using libraries like `cartopy` and `matplotlib_scalebar`.
-- **Output:** High-resolution 300 DPI outputs with optimized bounding boxes.
+All maps use:
+- **Projection**: UTM (EPSG auto-detected from input rasters)
+- **Hillshade**: Computed from Copernicus DEM 30 m using matplotlib `LightSource` (azimuth 315°, altitude 60°, z-factor 1.0)
+- **Grid**: Decimal degree gridlines at 0.1° intervals via cartopy `gridlines`
+- **North arrow**: Text 'N' + triangle marker at axes upper-right
+- **Scale bar**: `matplotlib_scalebar` at lower-left
+- **Resolution**: 300 DPI, white background, `bbox_inches='tight'`
+
+![Study Area Map](assets/figures/07_Study_Area_Map_Redesigned.png)
 
 ## Source Code
 The complete implementation for rendering these maps is available in the repository:
