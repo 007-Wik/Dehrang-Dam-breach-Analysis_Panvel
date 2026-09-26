@@ -8,14 +8,13 @@ theme:
     - toc.integrate
 plugins:
   - search
-  - mkdocs-jupyter
 nav:
   - Home: index.md
   - Full Report: report_content.md
-  - Notebooks:
-      - Storage Elevation Analysis: notebooks/01_Storage_Elevation_Analysis.ipynb
-      - DBA Basin HydroPrep: notebooks/02_DBA_Basin_HydroPrep.ipynb
-      - DamBreak Analysis: notebooks/03_DamBreak_Analysis.ipynb
-      - IDF Analysis Panvel: notebooks/04_IDF_Analysis_Panvel.ipynb
-      - Maps Generation (Colab): notebooks/05_Maps_GoogleColab.ipynb
+  - Analysis Chapters:
+      - 1. Storage Elevation Analysis: chapter1_storage_elevation.md
+      - 2. DBA Basin HydroPrep: chapter2_basin_hydroprep.md
+      - 3. DamBreak Analysis: chapter3_dambreak_analysis.md
+      - 4. IDF Analysis Panvel: chapter4_idf_analysis.md
+      - 5. Maps Generation (Colab): chapter5_maps_generation.md
   - Interactive Maps: maps.md
