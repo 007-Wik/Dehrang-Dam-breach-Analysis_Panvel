@@ -487,10 +487,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
+  <a href="#3-hydrological-soil-group-classification-notebooks-02-03" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objective
+        3. Hydrological Soil Group Classification (Notebooks 02, 03)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Hydrological Soil Group Classification (Notebooks 02, 03)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-soil-texture-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Soil Texture Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-hsg-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 HSG Assignment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-scs-curve-number-grid-notebooks-02-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. SCS Curve Number Grid (Notebooks 02, 03)
       
     </span>
   </a>
@@ -498,10 +537,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#methodology-highlights" class="md-nav__link">
+  <a href="#5-mannings-roughness-grid-notebooks-02-03" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Methodology Highlights
+        5. Manning's Roughness Grid (Notebooks 02, 03)
       
     </span>
   </a>
@@ -665,15 +704,29 @@
 
 <h1 id="chapter-2-basin-hydrological-preparation">Chapter 2: Basin Hydrological Preparation</h1>
 <p>This chapter prepares the necessary spatial and hydrological datasets for the dam break analysis. </p>
-<h2 id="objective">Objective</h2>
-<p>To assign Hydrological Soil Groups (HSG), compute SCS Curve Numbers (CN), and prepare Manning's roughness grids for the Gadhi River basin.</p>
-<h2 id="methodology-highlights">Methodology Highlights</h2>
-<ul>
-<li><strong>Soil Texture Data:</strong> Extracts clay, sand, and silt fractions from ISRIC SoilGrids v2 and creates depth-weighted composites.</li>
-<li><strong>HSG Assignment:</strong> Classifies pixels into USDA Hydrological Soil Groups (A, B, C, or D) using the textural triangle.</li>
-<li><strong>Curve Number Grid:</strong> Assigns SCS Curve Numbers based on LULC class (ESA WorldCover 2021) and HSG.</li>
-<li><strong>Manning's Roughness:</strong> Assigns roughness values for open water, impervious surfaces, forest, and cropland based on established hydraulic tables (Chow 1959, CWPRS).</li>
-</ul>
+<h2 id="3-hydrological-soil-group-classification-notebooks-02-03">3. Hydrological Soil Group Classification (Notebooks 02, 03)</h2>
+<h3 id="31-soil-texture-data">3.1 Soil Texture Data</h3>
+<p>Clay, sand, and silt fractions (g/kg) are downloaded at three depths (0–5 cm, 5–15 cm, 15–30 cm) from ISRIC SoilGrids v2 via the OGC WCS 2.0 API. Values are converted from stored integers (g/kg × 10) to percentages by dividing by 10. A depth-weighted composite is formed:</p>
+<pre><code>texture_0_30cm = (texture_0_5cm × 5 + texture_5_15cm × 10 + texture_15_30cm × 15) / 30
+</code></pre>
+<h3 id="32-hsg-assignment">3.2 HSG Assignment</h3>
+<p>Each pixel is classified into USDA Hydrological Soil Group using the textural triangle:
+- <strong>Group A</strong> (Low runoff potential): sand, loamy sand, sandy loam
+- <strong>Group B</strong> (Moderate-low): silt loam, loam
+- <strong>Group C</strong> (Moderate-high): sandy clay loam
+- <strong>Group D</strong> (High runoff potential): clay loam, silty clay loam, sandy clay, silty clay, clay</p>
+<p><img alt="Hydrological Soil Groups" src="../assets/figures/04_HSG_Grid.png" /></p>
+<h2 id="4-scs-curve-number-grid-notebooks-02-03">4. SCS Curve Number Grid (Notebooks 02, 03)</h2>
+<p>Curve Numbers are assigned per the NRCS TR-55 (AMC II conditions) lookup table, adapted for Indian conditions per Mishra &amp; Singh (2003). The CN for each pixel is determined by its combination of:
+- LULC class (from ESA WorldCover 2021)
+- HSG (A, B, C, or D)</p>
+<p><img alt="LULC Map" src="../assets/figures/02_LULC_ESA_WorldCover.png" />
+<img alt="Curve Number Grid" src="../assets/figures/03_CN_Grid.png" /></p>
+<h2 id="5-mannings-roughness-grid-notebooks-02-03">5. Manning's Roughness Grid (Notebooks 02, 03)</h2>
+<p>Manning's n values are assigned per LULC class using:
+- Open water, impervious surfaces: Chow (1959) channel values
+- Forest, cropland, grassland: CWPRS (2018) and Arora et al. (2021) overland flow values</p>
+<p><img alt="Manning's Roughness Grid" src="../assets/figures/05_Mannings_n.png" /></p>
 <h2 id="source-code">Source Code</h2>
 <p>The complete implementation and spatial processing scripts are available in the repository:
 <a href="https://github.com/007-Wik/Dehrang-Dam-breach-Analysis_Panvel/blob/main/docs/notebooks/02_DBA_Basin_HydroPrep.ipynb">View the full Jupyter Notebook for this chapter on GitHub</a></p>

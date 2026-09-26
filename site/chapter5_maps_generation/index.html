@@ -571,21 +571,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
+  <a href="#8-cartographic-maps-notebook-05" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objective
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methodology-highlights" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methodology Highlights
+        8. Cartographic Maps (Notebook 05)
       
     </span>
   </a>
@@ -665,15 +654,15 @@
 
 <h1 id="chapter-5-cartographic-maps-and-visualization">Chapter 5: Cartographic Maps and Visualization</h1>
 <p>This final chapter focuses on creating high-quality, professional cartographic maps of the study area, hazard zones, and flood extents.</p>
-<h2 id="objective">Objective</h2>
-<p>To generate publication-ready maps presenting the results of the hydrological and dam break analyses.</p>
-<h2 id="methodology-highlights">Methodology Highlights</h2>
-<ul>
-<li><strong>Map Projections:</strong> Maps are projected to UTM (EPSG auto-detected from input rasters) to preserve area and distance measurements.</li>
-<li><strong>Topographic Styling:</strong> Applies hillshade computed from the Copernicus 30 m DEM using proper azimuth and altitude parameters.</li>
-<li><strong>Cartographic Elements:</strong> Standardized grids (decimal degrees), north arrows, scale bars, and legends are added using libraries like <code>cartopy</code> and <code>matplotlib_scalebar</code>.</li>
-<li><strong>Output:</strong> High-resolution 300 DPI outputs with optimized bounding boxes.</li>
-</ul>
+<h2 id="8-cartographic-maps-notebook-05">8. Cartographic Maps (Notebook 05)</h2>
+<p>All maps use:
+- <strong>Projection</strong>: UTM (EPSG auto-detected from input rasters)
+- <strong>Hillshade</strong>: Computed from Copernicus DEM 30 m using matplotlib <code>LightSource</code> (azimuth 315°, altitude 60°, z-factor 1.0)
+- <strong>Grid</strong>: Decimal degree gridlines at 0.1° intervals via cartopy <code>gridlines</code>
+- <strong>North arrow</strong>: Text 'N' + triangle marker at axes upper-right
+- <strong>Scale bar</strong>: <code>matplotlib_scalebar</code> at lower-left
+- <strong>Resolution</strong>: 300 DPI, white background, <code>bbox_inches='tight'</code></p>
+<p><img alt="Study Area Map" src="../assets/figures/07_Study_Area_Map_Redesigned.png" /></p>
 <h2 id="source-code">Source Code</h2>
 <p>The complete implementation for rendering these maps is available in the repository:
 <a href="https://github.com/007-Wik/Dehrang-Dam-breach-Analysis_Panvel/blob/main/docs/notebooks/05_Maps_GoogleColab.ipynb">View the full Jupyter Notebook for this chapter on GitHub</a></p>

@@ -459,10 +459,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
+  <a href="#1-dam-and-project-background" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objective
+        1. Dam and Project Background
       
     </span>
   </a>
@@ -470,13 +470,74 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#methodology-highlights" class="md-nav__link">
+  <a href="#2-storage-elevation-analysis-notebook-01" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Methodology Highlights
+        2. Storage-Elevation Analysis (Notebook 01)
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. Storage-Elevation Analysis (Notebook 01)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-survey-data-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Survey Data Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-area-elevation-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Area-Elevation Relationship
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-volume-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Volume Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-capacity-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Capacity Loss
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -665,15 +726,27 @@
 
 <h1 id="chapter-1-storage-elevation-analysis">Chapter 1: Storage-Elevation Analysis</h1>
 <p>This section of the analysis focuses on determining the storage capacity and elevation relationships for the Dehrang Dam. It processes survey data to calculate the capacity loss due to siltation over time.</p>
-<h2 id="objective">Objective</h2>
-<p>To calculate the Area-Elevation relationship and estimate the total volume of accumulated silt (capacity loss).</p>
-<h2 id="methodology-highlights">Methodology Highlights</h2>
-<ul>
-<li><strong>Survey Data Processing:</strong> Analyzes grid box data recording the top and bottom elevations of the sludge layer.</li>
-<li><strong>Area-Elevation Relationship:</strong> Calculates original and current water-spread areas at 0.2 m elevation intervals.</li>
-<li><strong>Volume Integration:</strong> Utilizes the trapezoidal rule to calculate cumulative storage.</li>
-<li><strong>Capacity Loss Calculation:</strong> Original cumulative volume minus the current cumulative volume.</li>
-</ul>
+<h2 id="1-dam-and-project-background">1. Dam and Project Background</h2>
+<p><strong>Dehrang Dam</strong> is a minor earthen dam with an automatic gated spillway located at 19°1′54″N, 73°14′32″E in Raigad District, Maharashtra, commissioned in 1957 and operated by the Panvel Municipal Corporation. The dam stores water in the Gadhi River basin, which drains to the coastal lowlands south of Mumbai.</p>
+<p>A Pre-monsoon 2025 inspection was carried out by Yash Engineering Consultant Pvt. Ltd. (Navi Mumbai) using the 10×10 m box method sludge survey, covering 3,193 grid boxes and measuring a total silt accumulation of 517,705.69 m³.</p>
+<h2 id="2-storage-elevation-analysis-notebook-01">2. Storage-Elevation Analysis (Notebook 01)</h2>
+<h3 id="21-survey-data-processing">2.1 Survey Data Processing</h3>
+<p>Each survey box records the bottom and top elevation of the sludge layer and the horizontal plan area of that box. The bottom elevation represents the original reservoir bed; the top elevation represents the current silt surface.</p>
+<h3 id="22-area-elevation-relationship">2.2 Area-Elevation Relationship</h3>
+<p>For each elevation h (0.2 m intervals from river bed to FRL):
+- <strong>Original area</strong> = sum of plan areas of all boxes whose <code>Avg_Sludge_Bot ≤ h</code>
+- <strong>Current area</strong> = sum of plan areas of all boxes whose <code>Avg_Sludge_Top ≤ h</code></p>
+<p>Above the maximum surveyed elevation, original area is extrapolated using a 2nd-order polynomial fitted to the survey data in the range 83.0–max_surveyed m. Current area above the maximum silt-top elevation is set equal to the original area (no silt recorded above that level).</p>
+<h3 id="23-volume-integration">2.3 Volume Integration</h3>
+<p>Cumulative storage is integrated using the trapezoidal rule:</p>
+<pre><code>V(i) = V(i-1) + (A(i-1) + A(i)) / 2 × Δh
+</code></pre>
+<p>where Δh = 0.2 m and A(i) is the water-spread area at elevation i.</p>
+<h3 id="24-capacity-loss">2.4 Capacity Loss</h3>
+<p>Capacity loss at each elevation = Original cumulative volume − Current cumulative volume.</p>
+<h3 id="visualizations">Visualizations</h3>
+<p><img alt="Reservoir Submergence" src="../assets/figures/06_Reservoir_Submergence.png" /></p>
+<p><img alt="Reservoir Submergence Basemap" src="../assets/figures/06_Reservoir_Submergence_Basemap.png" /></p>
 <h2 id="source-code">Source Code</h2>
 <p>The complete implementation and outputs are available in the repository:
 <a href="https://github.com/007-Wik/Dehrang-Dam-breach-Analysis_Panvel/blob/main/docs/notebooks/01_Storage_Elevation_Analysis.ipynb">View the full Jupyter Notebook for this chapter on GitHub</a></p>
