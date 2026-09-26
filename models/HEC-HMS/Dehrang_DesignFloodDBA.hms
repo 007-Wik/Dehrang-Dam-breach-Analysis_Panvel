@@ -1,0 +1,39 @@
+Project: Dehrang_DesignFloodDBA
+     Description: 
+     Version: 4.13
+     Filepath Separator: \
+     DSS File Name: Dehrang_DesignFloodDBA.dss
+     Time Zone ID: Asia/Calcutta
+End:
+
+Precipitation: 100Yr_Storm_IDF
+     Filename: 100Yr_Storm_IDF.met
+     Description: 
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:55
+End:
+
+Precipitation: IMD_ABM_1day
+     Filename: IMD_ABM_1day_.met
+     Description: 
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:50
+End:
+
+Basin: Basin 1
+     Filename: Basin_1.basin
+     Description: 
+     Last Modified Date: 22 April 2026
+     Last Modified Time: 09:07
+End:
+
+Control: Control IDF
+     FileName: Control_IDF.control
+     Description: 
+End:
+
+Control: Control IMD-ABM
+     FileName: Control_IMD_ABM.control
+     Description: 
+End:
+

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: 16 April 2026 12:08:28</msg><msg code="-2147467259" type="100">Traceback (most recent call last):
+  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\calculategeometry.py", line 290, in &lt;module&gt;
+    CalculateGeometry(fc, properties, lUnit, aUnit, cs, cformat)
+  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\calculategeometry.py", line 28, in CalculateGeometry
+    aga = AddGeometryAttributes(fc, "", lUnit, aUnit, cs)
+  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\AddGeometryAttributes.py", line 30, in __init__
+    desc = arcpy.Describe(fc)
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\__init__.py", line 1275, in Describe
+    return gp.describe(value, data_type)
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\geoprocessing\_base.py", line 384, in describe
+    self._gp.Describe(*gp_fixargs(args, True)))
+OSError: "Rivercentreline " does not exist
+</msg><msg code="0" type="0">Failed script (null)...</msg><msg code="-2147467259" type="100">Failed to execute (CalculateGeometryAttributes).</msg><msg code="0" type="3">Failed at 16 April 2026 12:08:28 (Elapsed Time: 0.43 seconds)</msg></messages>

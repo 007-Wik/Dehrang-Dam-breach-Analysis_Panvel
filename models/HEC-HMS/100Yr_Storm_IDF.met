@@ -1,0 +1,42 @@
+Meteorology: 100Yr_Storm_IDF
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 05:05:02
+     Version: 4.13
+     Unit System: Metric
+     Set Missing Data to Default: Yes
+     Precipitation Method: Hypothetical Storm
+     Air Temperature Method: None
+     Atmospheric Pressure Method: None
+     Dew Point Method: None
+     Wind Speed Method: None
+     Shortwave Radiation Method: None
+     Longwave Radiation Method: None
+     Snowmelt Method: None
+     Evapotranspiration Method: No Evapotranspiration
+     Use Basin Model: Basin 1
+End:
+
+Precip Method Parameters: Hypothetical Storm
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:55:18
+     Precipitation Method: Point Depth
+     Storm Depth: 486.72
+     Storm Type: SCS Type II
+     Depth-Area Reduction Method: No Reduction
+     Uniform Depth: Yes
+End:
+
+Subbasin: Subbasin-1
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:55:18
+End:
+
+Subbasin: Subbasin-2
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:55:18
+End:
+
+Subbasin: Subbasin-3
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:55:18
+End:

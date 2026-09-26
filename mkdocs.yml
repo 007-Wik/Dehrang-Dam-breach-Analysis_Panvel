@@ -1,0 +1,20 @@
+site_name: Dehrang Dam Breach Analysis
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+plugins:
+  - search
+  - mkdocs-jupyter
+nav:
+  - Home: index.md
+  - Full Report: report_content.md
+  - Notebooks:
+      - Storage Elevation Analysis: notebooks/01_Storage_Elevation_Analysis.ipynb
+      - DBA Basin HydroPrep: notebooks/02_DBA_Basin_HydroPrep.ipynb
+      - DamBreak Analysis: notebooks/03_DamBreak_Analysis.ipynb
+      - IDF Analysis Panvel: notebooks/04_IDF_Analysis_Panvel.ipynb
+      - Maps Generation (Colab): notebooks/05_Maps_GoogleColab.ipynb
+  - Interactive Maps: maps.md

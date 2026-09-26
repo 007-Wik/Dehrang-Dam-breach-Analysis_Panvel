@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RunResults>
+  <RunName>Run IMD_ABM_1DAY</RunName>
+  <Description>Basin: Basin 1 , Meteorology: IMD_ABM_1day , Control: Control IDF</Description>
+  <ExecutionTime>18Apr2026, 08:56:05</ExecutionTime>
+  <StartTime>31May2025, 24:00</StartTime>
+  <EndTime>01Jun2025, 24:00</EndTime>
+  <BasinElement name="Subbasin-3" type="Subbasin">
+    <ExecutionTime>18Apr2026, 08:56:05</ExecutionTime>
+    <SubbasinArea area="15.027" units="KM2" />
+    <UnitSystem>SI</UnitSystem>
+    <IsComputationPoint>No</IsComputationPoint>
+    <DrainageArea area="15.027" units="KM2" />
+    <Hydrology>
+      <TimeSeries>
+        <TimeSeriesType type="Outflow" displayString="Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-3/FLOW//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Outflow" displayString="Cumulative Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-3/FLOW-CUMULATIVE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Incremental Precip" displayString="Precipitation" />
+        <DssFileName>IMD_ABM_1day.dss</DssFileName>
+        <DssPathname>//Subbasin-3/PRECIP-INC//1HOUR/MET:IMD_ABM_1day/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Precip" displayString="Cumulative Precipitation" />
+        <DssFileName>IMD_ABM_1day.dss</DssFileName>
+        <DssPathname>//Subbasin-3/PRECIP-CUM//1HOUR/MET:IMD_ABM_1day/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Infiltration" displayString="Soil Infiltration" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-3/INFILTRATION//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Precip Excess" displayString="Excess Precipitation" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-3/PRECIP-EXCESS//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Excess" displayString="Cumulative Excess Precipitation" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-3/PRECIP-EXCESS-CUM//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Precip Loss" displayString="Precipitation Loss" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-3/PRECIP-LOSS//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Loss" displayString="Cumulative Precipitation Loss" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-3/PRECIP-LOSS-CUM//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Direct Runoff" displayString="Direct Runoff" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-3/FLOW-DIRECT//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Baseflow" displayString="Baseflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-3/FLOW-BASE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+    </Hydrology>
+    <Sediment />
+    <Statistics>
+      <StatisticMeasure type="Inflow Minimum" displayString="Minimum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Minimum Time" displayString="Time of Minimum Inflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Inflow Maximum" displayString="Maximum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Maximum Time" displayString="Time of Maximum Inflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Inflow Volume" displayString="Inflow Volume" value="0.0000000" units="M3" />
+      <StatisticMeasure type="Inflow Depth" displayString="Inflow Depth" value="0.0000000" units="MM" />
+      <StatisticMeasure type="Inflow Average" displayString="Inflow Average" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum" displayString="Minimum Outflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum Time" displayString="Time of Minimum Outflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Outflow Maximum" displayString="Maximum Outflow" value="342.5082528" units="M3/S" />
+      <StatisticMeasure type="Outflow Maximum Time" displayString="Time of Maximum Outflow" value="01Jun2025, 13:00" />
+      <StatisticMeasure type="Outflow Volume" displayString="Outflow Volume" value="5880967.4884389" units="M3" />
+      <StatisticMeasure type="Outflow Depth" displayString="Outflow Depth" value="391.3600511" units="MM" />
+      <StatisticMeasure type="Outflow Average" displayString="Outflow Average" value="65.9554400" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Minimum" displayString="Minimum Direct Flow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Minimum Time" displayString="Time of Minimum Direct Flow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Direct Flow Maximum" displayString="Maximum Direct Flow" value="342.5082528" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Maximum Time" displayString="Time of Maximum Direct Flow" value="01Jun2025, 13:00" />
+      <StatisticMeasure type="Direct Flow Volume" displayString="Direct Flow Volume" value="5880967.4884389" units="M3" />
+      <StatisticMeasure type="Direct Flow Depth" displayString="Direct Flow Depth" value="391.3600511" units="MM" />
+      <StatisticMeasure type="Direct Flow Average" displayString="Direct Flow Average" value="65.9554400" units="M3/S" />
+      <StatisticMeasure type="Baseflow Minimum" displayString="Minimum Baseflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Baseflow Minimum Time" displayString="Time of Minimum Baseflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Baseflow Maximum" displayString="Maximum Baseflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Baseflow Maximum Time" displayString="Time of Maximum Baseflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Baseflow Volume" displayString="Baseflow Volume" value="0.0000000" units="M3" />
+      <StatisticMeasure type="Baseflow Depth" displayString="Baseflow Depth" value="0.0000000" units="MM" />
+      <StatisticMeasure type="Baseflow Average" displayString="Baseflow Average" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Precipitation Maximum" displayString="Maximum Precipitation" value="168.7370000" units="MM" />
+      <StatisticMeasure type="Precipitation Maximum Time" displayString="Time of Maximum Precipitation" value="01Jun2025, 11:00" />
+      <StatisticMeasure type="Precipitation Total" displayString="Precipitation Total" value="486.7220000" units="MM" />
+      <StatisticMeasure type="Precipitation Volume" displayString="Precipitation Volume" value="7313971.4940000" units="M3" />
+      <StatisticMeasure type="Loss Maximum" displayString="Maximum Loss" value="13.2482073" units="MM" />
+      <StatisticMeasure type="Loss Maximum Time" displayString="Time of Maximum Loss" value="01Jun2025, 11:00" />
+      <StatisticMeasure type="Loss Total" displayString="Loss Total" value="82.5044141" units="MM" />
+      <StatisticMeasure type="Loss Volume" displayString="Loss Volume" value="1239793.8309418" units="M3" />
+      <StatisticMeasure type="Excess Maximum" displayString="Maximum Excess" value="155.4887927" units="MM" />
+      <StatisticMeasure type="Excess Maximum Time" displayString="Time of Maximum Excess" value="01Jun2025, 11:00" />
+      <StatisticMeasure type="Excess Total" displayString="Excess Total" value="404.2175859" units="MM" />
+      <StatisticMeasure type="Excess Volume" displayString="Excess Volume" value="6074177.6630582" units="M3" />
+    </Statistics>
+  </BasinElement>
+  <BasinElement name="Subbasin-1" type="Subbasin">
+    <ExecutionTime>18Apr2026, 08:56:05</ExecutionTime>
+    <SubbasinArea area="12.316" units="KM2" />
+    <UnitSystem>SI</UnitSystem>
+    <IsComputationPoint>No</IsComputationPoint>
+    <DrainageArea area="12.316" units="KM2" />
+    <Hydrology>
+      <TimeSeries>
+        <TimeSeriesType type="Outflow" displayString="Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-1/FLOW//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Outflow" displayString="Cumulative Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-1/FLOW-CUMULATIVE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Incremental Precip" displayString="Precipitation" />
+        <DssFileName>IMD_ABM_1day.dss</DssFileName>
+        <DssPathname>//Subbasin-1/PRECIP-INC//1HOUR/MET:IMD_ABM_1day/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Precip" displayString="Cumulative Precipitation" />
+        <DssFileName>IMD_ABM_1day.dss</DssFileName>
+        <DssPathname>//Subbasin-1/PRECIP-CUM//1HOUR/MET:IMD_ABM_1day/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Infiltration" displayString="Soil Infiltration" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-1/INFILTRATION//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Precip Excess" displayString="Excess Precipitation" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-1/PRECIP-EXCESS//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Excess" displayString="Cumulative Excess Precipitation" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-1/PRECIP-EXCESS-CUM//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Precip Loss" displayString="Precipitation Loss" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-1/PRECIP-LOSS//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Loss" displayString="Cumulative Precipitation Loss" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-1/PRECIP-LOSS-CUM//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Direct Runoff" displayString="Direct Runoff" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-1/FLOW-DIRECT//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Baseflow" displayString="Baseflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-1/FLOW-BASE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+    </Hydrology>
+    <Sediment />
+    <Statistics>
+      <StatisticMeasure type="Inflow Minimum" displayString="Minimum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Minimum Time" displayString="Time of Minimum Inflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Inflow Maximum" displayString="Maximum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Maximum Time" displayString="Time of Maximum Inflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Inflow Volume" displayString="Inflow Volume" value="0.0000000" units="M3" />
+      <StatisticMeasure type="Inflow Depth" displayString="Inflow Depth" value="0.0000000" units="MM" />
+      <StatisticMeasure type="Inflow Average" displayString="Inflow Average" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum" displayString="Minimum Outflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum Time" displayString="Time of Minimum Outflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Outflow Maximum" displayString="Maximum Outflow" value="212.5657042" units="M3/S" />
+      <StatisticMeasure type="Outflow Maximum Time" displayString="Time of Maximum Outflow" value="01Jun2025, 14:00" />
+      <StatisticMeasure type="Outflow Volume" displayString="Outflow Volume" value="4609453.3838068" units="M3" />
+      <StatisticMeasure type="Outflow Depth" displayString="Outflow Depth" value="374.2654582" units="MM" />
+      <StatisticMeasure type="Outflow Average" displayString="Outflow Average" value="51.7628810" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Minimum" displayString="Minimum Direct Flow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Minimum Time" displayString="Time of Minimum Direct Flow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Direct Flow Maximum" displayString="Maximum Direct Flow" value="212.5657042" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Maximum Time" displayString="Time of Maximum Direct Flow" value="01Jun2025, 14:00" />
+      <StatisticMeasure type="Direct Flow Volume" displayString="Direct Flow Volume" value="4609453.3838068" units="M3" />
+      <StatisticMeasure type="Direct Flow Depth" displayString="Direct Flow Depth" value="374.2654582" units="MM" />
+      <StatisticMeasure type="Direct Flow Average" displayString="Direct Flow Average" value="51.7628810" units="M3/S" />
+      <StatisticMeasure type="Baseflow Minimum" displayString="Minimum Baseflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Baseflow Minimum Time" displayString="Time of Minimum Baseflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Baseflow Maximum" displayString="Maximum Baseflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Baseflow Maximum Time" displayString="Time of Maximum Baseflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Baseflow Volume" displayString="Baseflow Volume" value="0.0000000" units="M3" />
+      <StatisticMeasure type="Baseflow Depth" displayString="Baseflow Depth" value="0.0000000" units="MM" />
+      <StatisticMeasure type="Baseflow Average" displayString="Baseflow Average" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Precipitation Maximum" displayString="Maximum Precipitation" value="168.7370000" units="MM" />
+      <StatisticMeasure type="Precipitation Maximum Time" displayString="Time of Maximum Precipitation" value="01Jun2025, 11:00" />
+      <StatisticMeasure type="Precipitation Total" displayString="Precipitation Total" value="486.7220000" units="MM" />
+      <StatisticMeasure type="Precipitation Volume" displayString="Precipitation Volume" value="5994468.1520000" units="M3" />
+      <StatisticMeasure type="Loss Maximum" displayString="Maximum Loss" value="15.7262937" units="MM" />
+      <StatisticMeasure type="Loss Maximum Time" displayString="Time of Maximum Loss" value="01Jun2025, 11:00" />
+      <StatisticMeasure type="Loss Total" displayString="Loss Total" value="91.1135637" units="MM" />
+      <StatisticMeasure type="Loss Volume" displayString="Loss Volume" value="1122154.6508065" units="M3" />
+      <StatisticMeasure type="Excess Maximum" displayString="Maximum Excess" value="153.0107063" units="MM" />
+      <StatisticMeasure type="Excess Maximum Time" displayString="Time of Maximum Excess" value="01Jun2025, 11:00" />
+      <StatisticMeasure type="Excess Total" displayString="Excess Total" value="395.6084363" units="MM" />
+      <StatisticMeasure type="Excess Volume" displayString="Excess Volume" value="4872313.5011935" units="M3" />
+    </Statistics>
+  </BasinElement>
+  <BasinElement name="Reach-1" type="Reach">
+    <ExecutionTime>18Apr2026, 08:56:05</ExecutionTime>
+    <UnitSystem>SI</UnitSystem>
+    <IsComputationPoint>No</IsComputationPoint>
+    <DrainageArea area="27.343" units="KM2" />
+    <FlowLink upstreamName="Subbasin-3" />
+    <FlowLink upstreamName="Subbasin-1" />
+    <Hydrology>
+      <TimeSeries>
+        <TimeSeriesType type="Outflow" displayString="Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Reach-1/FLOW//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Outflow" displayString="Cumulative Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Reach-1/FLOW-CUMULATIVE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Combined Inflow" displayString="Combined Inflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Reach-1/FLOW-COMBINE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+    </Hydrology>
+    <Sediment />
+    <Statistics>
+      <StatisticMeasure type="Inflow Minimum" displayString="Minimum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Minimum Time" displayString="Time of Minimum Inflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Inflow Maximum" displayString="Maximum Inflow" value="529.7574311" units="M3/S" />
+      <StatisticMeasure type="Inflow Maximum Time" displayString="Time of Maximum Inflow" value="01Jun2025, 13:00" />
+      <StatisticMeasure type="Inflow Volume" displayString="Inflow Volume" value="10490420.8722457" units="M3" />
+      <StatisticMeasure type="Inflow Depth" displayString="Inflow Depth" value="383.6602009" units="MM" />
+      <StatisticMeasure type="Inflow Average" displayString="Inflow Average" value="117.7183210" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum" displayString="Minimum Outflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum Time" displayString="Time of Minimum Outflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Outflow Maximum" displayString="Maximum Outflow" value="505.1464316" units="M3/S" />
+      <StatisticMeasure type="Outflow Maximum Time" displayString="Time of Maximum Outflow" value="01Jun2025, 14:00" />
+      <StatisticMeasure type="Outflow Volume" displayString="Outflow Volume" value="10439801.4998945" units="M3" />
+      <StatisticMeasure type="Outflow Depth" displayString="Outflow Depth" value="381.8089273" units="MM" />
+      <StatisticMeasure type="Outflow Average" displayString="Outflow Average" value="117.1822001" units="M3/S" />
+    </Statistics>
+  </BasinElement>
+  <BasinElement name="Subbasin-2" type="Subbasin">
+    <ExecutionTime>18Apr2026, 08:56:05</ExecutionTime>
+    <SubbasinArea area="0.6651" units="KM2" />
+    <UnitSystem>SI</UnitSystem>
+    <IsComputationPoint>No</IsComputationPoint>
+    <DrainageArea area="0.6651" units="KM2" />
+    <Hydrology>
+      <TimeSeries>
+        <TimeSeriesType type="Outflow" displayString="Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-2/FLOW//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Outflow" displayString="Cumulative Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-2/FLOW-CUMULATIVE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Incremental Precip" displayString="Precipitation" />
+        <DssFileName>IMD_ABM_1day.dss</DssFileName>
+        <DssPathname>//Subbasin-2/PRECIP-INC//1HOUR/MET:IMD_ABM_1day/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Precip" displayString="Cumulative Precipitation" />
+        <DssFileName>IMD_ABM_1day.dss</DssFileName>
+        <DssPathname>//Subbasin-2/PRECIP-CUM//1HOUR/MET:IMD_ABM_1day/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Infiltration" displayString="Soil Infiltration" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-2/INFILTRATION//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Precip Excess" displayString="Excess Precipitation" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-2/PRECIP-EXCESS//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Excess" displayString="Cumulative Excess Precipitation" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-2/PRECIP-EXCESS-CUM//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Precip Loss" displayString="Precipitation Loss" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-2/PRECIP-LOSS//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Loss" displayString="Cumulative Precipitation Loss" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-2/PRECIP-LOSS-CUM//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Direct Runoff" displayString="Direct Runoff" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-2/FLOW-DIRECT//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Baseflow" displayString="Baseflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Subbasin-2/FLOW-BASE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+    </Hydrology>
+    <Sediment />
+    <Statistics>
+      <StatisticMeasure type="Inflow Minimum" displayString="Minimum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Minimum Time" displayString="Time of Minimum Inflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Inflow Maximum" displayString="Maximum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Maximum Time" displayString="Time of Maximum Inflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Inflow Volume" displayString="Inflow Volume" value="0.0000000" units="M3" />
+      <StatisticMeasure type="Inflow Depth" displayString="Inflow Depth" value="0.0000000" units="MM" />
+      <StatisticMeasure type="Inflow Average" displayString="Inflow Average" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum" displayString="Minimum Outflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum Time" displayString="Time of Minimum Outflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Outflow Maximum" displayString="Maximum Outflow" value="18.6488739" units="M3/S" />
+      <StatisticMeasure type="Outflow Maximum Time" displayString="Time of Maximum Outflow" value="01Jun2025, 12:00" />
+      <StatisticMeasure type="Outflow Volume" displayString="Outflow Volume" value="273748.0336415" units="M3" />
+      <StatisticMeasure type="Outflow Depth" displayString="Outflow Depth" value="411.5892853" units="MM" />
+      <StatisticMeasure type="Outflow Average" displayString="Outflow Average" value="3.0675652" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Minimum" displayString="Minimum Direct Flow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Minimum Time" displayString="Time of Minimum Direct Flow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Direct Flow Maximum" displayString="Maximum Direct Flow" value="18.6488739" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Maximum Time" displayString="Time of Maximum Direct Flow" value="01Jun2025, 12:00" />
+      <StatisticMeasure type="Direct Flow Volume" displayString="Direct Flow Volume" value="273748.0336415" units="M3" />
+      <StatisticMeasure type="Direct Flow Depth" displayString="Direct Flow Depth" value="411.5892853" units="MM" />
+      <StatisticMeasure type="Direct Flow Average" displayString="Direct Flow Average" value="3.0675652" units="M3/S" />
+      <StatisticMeasure type="Baseflow Minimum" displayString="Minimum Baseflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Baseflow Minimum Time" displayString="Time of Minimum Baseflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Baseflow Maximum" displayString="Maximum Baseflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Baseflow Maximum Time" displayString="Time of Maximum Baseflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Baseflow Volume" displayString="Baseflow Volume" value="0.0000000" units="M3" />
+      <StatisticMeasure type="Baseflow Depth" displayString="Baseflow Depth" value="0.0000000" units="MM" />
+      <StatisticMeasure type="Baseflow Average" displayString="Baseflow Average" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Precipitation Maximum" displayString="Maximum Precipitation" value="168.7370000" units="MM" />
+      <StatisticMeasure type="Precipitation Maximum Time" displayString="Time of Maximum Precipitation" value="01Jun2025, 11:00" />
+      <StatisticMeasure type="Precipitation Total" displayString="Precipitation Total" value="486.7220000" units="MM" />
+      <StatisticMeasure type="Precipitation Volume" displayString="Precipitation Volume" value="323718.8022000" units="M3" />
+      <StatisticMeasure type="Loss Maximum" displayString="Maximum Loss" value="9.3362453" units="MM" />
+      <StatisticMeasure type="Loss Maximum Time" displayString="Time of Maximum Loss" value="01Jun2025, 11:00" />
+      <StatisticMeasure type="Loss Total" displayString="Loss Total" value="67.6169991" units="MM" />
+      <StatisticMeasure type="Loss Volume" displayString="Loss Volume" value="44972.0661243" units="M3" />
+      <StatisticMeasure type="Excess Maximum" displayString="Maximum Excess" value="159.4007547" units="MM" />
+      <StatisticMeasure type="Excess Maximum Time" displayString="Time of Maximum Excess" value="01Jun2025, 11:00" />
+      <StatisticMeasure type="Excess Total" displayString="Excess Total" value="419.1050009" units="MM" />
+      <StatisticMeasure type="Excess Volume" displayString="Excess Volume" value="278746.7360757" units="M3" />
+    </Statistics>
+  </BasinElement>
+  <BasinElement name="Sink-1" type="Sink">
+    <ExecutionTime>18Apr2026, 08:56:05</ExecutionTime>
+    <UnitSystem>SI</UnitSystem>
+    <IsComputationPoint>No</IsComputationPoint>
+    <DrainageArea area="28.0081" units="KM2" />
+    <FlowLink upstreamName="Reach-1" />
+    <FlowLink upstreamName="Subbasin-2" />
+    <Hydrology>
+      <TimeSeries>
+        <TimeSeriesType type="Outflow" displayString="Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Sink-1/FLOW//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Outflow" displayString="Cumulative Outflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Sink-1/FLOW-CUMULATIVE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Combined Inflow" displayString="Combined Inflow" />
+        <DssFileName>Run_IMD_ABM_1DAY.dss</DssFileName>
+        <DssPathname>//Sink-1/FLOW-COMBINE//1HOUR/RUN:Run IMD_ABM_1DAY/</DssPathname>
+      </TimeSeries>
+    </Hydrology>
+    <Sediment />
+    <Statistics>
+      <StatisticMeasure type="Inflow Minimum" displayString="Minimum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Minimum Time" displayString="Time of Minimum Inflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Inflow Maximum" displayString="Maximum Inflow" value="512.7605022" units="M3/S" />
+      <StatisticMeasure type="Inflow Maximum Time" displayString="Time of Maximum Inflow" value="01Jun2025, 14:00" />
+      <StatisticMeasure type="Inflow Volume" displayString="Inflow Volume" value="10713549.5335361" units="M3" />
+      <StatisticMeasure type="Inflow Depth" displayString="Inflow Depth" value="382.5161126" units="MM" />
+      <StatisticMeasure type="Inflow Average" displayString="Inflow Average" value="120.2497652" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum" displayString="Minimum Outflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum Time" displayString="Time of Minimum Outflow" value="31May2025, 24:00" />
+      <StatisticMeasure type="Outflow Maximum" displayString="Maximum Outflow" value="512.7605022" units="M3/S" />
+      <StatisticMeasure type="Outflow Maximum Time" displayString="Time of Maximum Outflow" value="01Jun2025, 14:00" />
+      <StatisticMeasure type="Outflow Volume" displayString="Outflow Volume" value="10713549.5335361" units="M3" />
+      <StatisticMeasure type="Outflow Depth" displayString="Outflow Depth" value="382.5161126" units="MM" />
+      <StatisticMeasure type="Outflow Average" displayString="Outflow Average" value="120.2497652" units="M3/S" />
+    </Statistics>
+  </BasinElement>
+</RunResults>
+

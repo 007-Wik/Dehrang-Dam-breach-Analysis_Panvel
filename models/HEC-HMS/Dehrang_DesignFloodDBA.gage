@@ -1,0 +1,22 @@
+Gage Manager: 
+     Gage Manager: 
+     Version: 4.13
+     Filepath Separator: \
+End: 
+
+Gage: Dehrang rainfall
+     Gage: Dehrang rainfall
+     Gage Type: Precipitation
+     Description: Design rainfall Hyetograph as per the IMD ABM method
+     Last Modified Date: 22 April 2026
+     Last Modified Time: 10:13:41
+     Reference Height Units: Meters
+     Reference Height: 9.9999
+     Data Source Type: Manual Entry
+     Filename: Dehrang_DesignFloodDBA.dss
+     Pathname: //Dehrang rainfall/PRECIP-INC//1HOUR/GAGE/
+     Variant: Variant-1
+       Start Time: 1 June 2025, 00:00
+       End Time: 2 June 2025, 00:00
+     End Variant: Variant-1
+End: 

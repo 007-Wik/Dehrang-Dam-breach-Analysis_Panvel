@@ -1,0 +1,217 @@
+Basin: Basin 1
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 04:54:59
+     Version: 4.13
+     Filepath Separator: \
+     Unit System: Metric
+     Missing Flow To Zero: No
+     Enable Flow Ratio: No
+     Compute Local Flow At Junctions: No
+     Unregulated Output Required: No
+
+     Enable Sediment Routing: No
+End:
+
+Subbasin: Subbasin-3
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:39:40
+     Latitude Degrees:  19.011944444444445
+     Longitude Degrees: 73.2611111111111
+     Canvas X: 317060.03611717955
+     Canvas Y: 2103122.292566406
+     Area: 15.027
+     Downstream: Reach-1
+
+     Discretization: None
+     File: Basin_1.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: SCS
+     Percent Impervious Area: 0.0
+     Curve Number: 76.51
+
+     Transform: SCS
+     Lag: 77.14
+     Unitgraph Type: STANDARD
+
+     Baseflow: None
+End:
+
+Subbasin: Subbasin-1
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:42:08
+     Latitude Degrees:  19.04638888888889
+     Longitude Degrees: 73.25861111111111
+     Canvas X: 316737.53974076384
+     Canvas Y: 2106880.5768674077
+     Area: 12.316
+     Downstream: Reach-1
+
+     Discretization: None
+     File: Basin_1.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: SCS
+     Percent Impervious Area: 0.0
+     Curve Number: 74.41
+
+     Transform: SCS
+     Lag: 125.72
+     Unitgraph Type: STANDARD
+
+     Baseflow: None
+End:
+
+Reach: Reach-1
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:38:17
+     Canvas X: 315045.36511557107
+     Canvas Y: 2105336.0158029543
+     From Canvas X: 315135.36511557107
+     From Canvas Y: 2105336.0158029543
+     Downstream: Sink-1
+
+     Route: Muskingum
+     Initial Variable: Combined Inflow
+     Muskingum K: 0.24
+     Muskingum x: 0.4811
+     Muskingum Steps: 1
+     Channel Loss: None
+End:
+
+Subbasin: Subbasin-2
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 08:39:29
+     Latitude Degrees:  19.024447174179876
+     Longitude Degrees: 73.2425
+     Canvas X: 315039.3164010922
+     Canvas Y: 2104457.3283875273
+     Area: 0.6651
+     Downstream: Sink-1
+
+     Discretization: None
+     File: Basin_1.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: SCS
+     Percent Impervious Area: 0.0
+     Curve Number: 80.28
+
+     Transform: SCS
+     Lag: 43.78
+     Unitgraph Type: STANDARD
+
+     Baseflow: None
+End:
+
+Sink: Sink-1
+     Last Modified Date: 18 April 2026
+     Last Modified Time: 04:54:59
+     Canvas X: 315045.36511557107
+     Canvas Y: 2105336.0158029543
+End:
+
+Basin Layer Properties:
+     Element Layer:
+          Name: Icons
+          Layer shown: Yes
+     End Layer:
+     Element Layer:
+          Name: Reaches
+          Layer shown: Yes
+     End Layer:
+     2D Connection Layer:
+          Layer shown: No
+     End Layer:
+     Element Layer:
+          Name: Subbasins
+          Layer shown: Yes
+     End Layer:
+     Discretization Layer:
+          Layer shown: No
+     End Layer:
+     Breakpoint Layer:
+          Layer shown: Yes
+     End Layer:
+     Base Layer:
+          Name: Identified Streams
+          Layer shown: Yes
+          Properties Filename: maps\streams0923101082026.xml
+     End Layer:
+     Base Layer:
+          Name: Flow Accumulation
+          Layer shown: No
+          Properties Filename: maps\flowaccum1422101082026.xml
+     End Layer:
+     Base Layer:
+          Name: Flow Direction
+          Layer shown: No
+          Properties Filename: maps\flowdir1322101082026.xml
+     End Layer:
+     Base Layer:
+          Name: Sink Locations
+          Layer shown: No
+          Properties Filename: maps\sinklocs5521101082026.xml
+     End Layer:
+     Base Layer:
+          Name: Sink Fill
+          Layer shown: No
+          Properties Filename: maps\sinkfill5521101082026.xml
+     End Layer:
+     Base Layer:
+          Name: Terrain
+          Layer shown: Yes
+          Properties Filename: maps\elevation1621101082026.xml
+     End Layer:
+End:
+
+Basin Spatial Properties:
+     Coordinate System: PROJCS["UTM_ZONE_43N_Wgs84",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",75],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
+     Terrain: Terrain 1
+     Break Point: Break Point 1
+          X Coordinate: 315032.2839370238
+          Y Coordinate: 2105338.4372185357
+     End Break Point:
+     junction_insert: false
+End:
+
+Basin Schematic Properties:
+     Last View N: 2106866.048685672
+     Last View S: 2103046.7806110037
+     Last View W: 315039.3164010922
+     Last View E: 316959.0442196019
+     Maximum View N: 2106866.048685672
+     Maximum View S: 2103046.7806110037
+     Maximum View W: 315039.3164010922
+     Maximum View E: 316959.0442196019
+     Extent Method: Elements
+     Buffer: 0
+     Draw Icons: Yes
+     Draw Icon Labels: Name
+     Draw Map Objects: No
+     Draw Gridlines: No
+     Draw Flow Direction: No
+     Draw HillShade Layer: Yes
+     Draw Elevation Layer: Yes
+     Elevation Layer Color Palette: Gray Scale
+     Ignore Elevation Color Ramp Scale: No
+     Use Interpolated Color Ramp for Elevation Layer: Yes
+     Color Ramp Opacity Level for Elevation Layer: 33.0
+     Fix Element Locations: No
+     Fix Hydrologic Order: No
+End:
