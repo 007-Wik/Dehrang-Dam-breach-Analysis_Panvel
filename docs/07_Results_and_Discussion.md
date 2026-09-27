@@ -1,4 +1,4 @@
-# Results and Discussion
+# 7. Results and Discussion
 
 The HEC-RAS 6.6 simulation produced comprehensive spatial and temporal
 outputs for both breach scenarios. This section presents the key
@@ -261,8 +261,7 @@ Starting Volume: 2,323 \| Ending Volume: 2,846
 
 Error: 4.987 \| Percent Error: 0.1755%
 
-**7.4 Discussion of Flood Inundation Mapping — Dehrang Dam Break
-Analysis**
+## 7.4 Discussion of Flood Inundation Mapping - Dehrang Dam Break Analysis
 
 For each failure mode, five thematic maps were generated, each capturing
 a distinct hydraulic parameter:
@@ -278,7 +277,7 @@ a distinct hydraulic parameter:
 The following sections discuss each map set in detail, with comparisons
 drawn between the two failure scenarios.
 
-**7.4.1 Overtopping Failure Scenario**
+### 7.4.1 Overtopping Failure Scenario
 
 In the overtopping scenario, a gradual rise in reservoir level —
 typically caused by extreme rainfall inflow — overtops the dam crest and
@@ -498,7 +497,7 @@ with low ground-floor elevations. In the Panvel–Kalamboli zone, even a
 WSE of 2–5 m above MSL translates to significant inundation depth given
 that local terrain is near sea level.
 
-**7.4.2 Piping Failure Scenario**
+### 7.4.2 Piping Failure Scenario
 
 In the piping (internal erosion) failure scenario, seepage through the
 dam body progressively erodes internal material, eventually forming a
@@ -719,7 +718,7 @@ of complete inundation in a piping scenario. Settlement-specific damage
 assessment requires cross-referencing WSE maps with building floor
 elevation data (available from topographic surveys or LiDAR).
 
-**7.4.3 Comparative Analysis: Overtopping vs. Piping**
+### 7.4.3 Comparative Analysis: Overtopping vs. Piping
 
 | **Parameter**               | **Overtopping Failure**         | **Piping Failure**                  |
 |-----------------------------|---------------------------------|-------------------------------------|
@@ -745,7 +744,7 @@ Harigram** are consistently in the high-hazard zone (H4–H6 range)
 regardless of failure mode, making them priority targets for flood risk
 communication and infrastructure investment.
 
-**7.4.4 Summary of Inundated Locations**
+### 7.4.4 Summary of Inundated Locations
 
 The following table summarises the approximate inundation
 characteristics for key settlements based on spatial interpretation of
@@ -773,7 +772,7 @@ all ten maps:
 from the simulation maps. Actual values require cell-level GIS
 extraction.*
 
-**7.4.5 Concluding Remarks**
+### 7.4.5 Concluding Remarks
 
 The ten flood inundation maps generated for the Dehrang Dam Break
 Analysis collectively provide a comprehensive picture of the downstream
@@ -904,31 +903,57 @@ briefly described below:
 
 **Map Suite – Overtopping Scenario (Scenario A):**
 
-Map OT-01: Maximum Inundation Depth – Overtopping Failure (0–5+ m depth
-classification)
+Map OT-01: Maximum Inundation Depth – Overtopping Failure (0–5+ m depth classification)
+
+![Map OT-01: Maximum Inundation Depth — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_FLOODDEPTH.jpg)
+*Map OT-01: Maximum Inundation Depth — Overtopping Failure (0–5+ m depth classification)*
 
 Map OT-02: Maximum Water Surface Elevation – Overtopping Failure
 
+![Map OT-02: Maximum Water Surface Elevation — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_WSE.jpg)
+*Map OT-02: Maximum Water Surface Elevation — Overtopping Failure*
+
 Map OT-03: Maximum Flow Velocity – Overtopping Failure
+
+![Map OT-03: Maximum Flow Velocity — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_VELOCITY.jpg)
+*Map OT-03: Maximum Flow Velocity — Overtopping Failure*
 
 Map OT-04: Maximum Arrival Time– Overtopping Failure
 
-Map OT-05: Composite Hazard Classification – Overtopping Failure (Low /
-Medium / High / Extreme)
+![Map OT-04: Maximum Arrival Time — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_ARRIVALTIME.jpg)
+*Map OT-04: Maximum Arrival Time — Overtopping Failure*
+
+Map OT-05: Composite Hazard Classification – Overtopping Failure (Low / Medium / High / Extreme)
+
+![Map OT-05: Composite Hazard Classification — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_FLOODHAZARD.jpg)
+*Map OT-05: Composite Hazard Classification — Overtopping Failure (Low / Medium / High / Extreme)*
 
 **Map Suite – Piping Scenario (Scenario B):**
 
-Map PI-01: Maximum Inundation Depth – Piping Failure (0–5+ m depth
-classification)
+Map PI-01: Maximum Inundation Depth – Piping Failure (0–5+ m depth classification)
+
+![Map PI-01: Maximum Inundation Depth — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_FLOODDEPTH.jpg)
+*Map PI-01: Maximum Inundation Depth — Piping Failure (0–5+ m depth classification)*
 
 Map PI-02: Maximum Water Surface Elevation – Piping Failure
 
+![Map PI-02: Maximum Water Surface Elevation — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_WSE.jpg)
+*Map PI-02: Maximum Water Surface Elevation — Piping Failure*
+
 Map PI-03: Maximum Flow Velocity – Piping Failure
+
+![Map PI-03: Maximum Flow Velocity — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_VELOCITY.jpg)
+*Map PI-03: Maximum Flow Velocity — Piping Failure*
 
 Map PI-04: Maximum Arrival Time – Piping Failure
 
-Map PI-05: Composite Hazard Classification – Piping Failure (Low /
-Medium / High / Extreme)
+![Map PI-04: Maximum Arrival Time — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_ARRIVALTIME.jpg)
+*Map PI-04: Maximum Arrival Time — Piping Failure*
+
+Map PI-05: Composite Hazard Classification – Piping Failure (Low / Medium / High / Extreme)
+
+![Map PI-05: Composite Hazard Classification — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_FLOODHAZARD.jpg)
+*Map PI-05: Composite Hazard Classification — Piping Failure (Low / Medium / High / Extreme)*
 
 The inundation maps are appended at the end of this report. Downstream
 settlements identified in the flood inundation envelope are to be

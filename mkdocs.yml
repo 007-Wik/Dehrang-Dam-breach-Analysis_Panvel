@@ -1,20 +1,55 @@
-site_name: Dehrang Dam Breach Analysis
+site_name: Dehrang Dam Break Analysis
 site_url: https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/
+repo_url: https://github.com/007-Wik/Dehrang-Dam-breach-Analysis_Panvel
+repo_name: 007-Wik/Dehrang-Dam-breach-Analysis_Panvel
+
 theme:
   name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
-    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
     - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
     - toc.integrate
-plugins:
-  - search
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
 
 markdown_extensions:
   - admonition
   - tables
+  - toc:
+      permalink: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - attr_list
+  - md_in_html
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -23,9 +58,14 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - 1. Introduction: 00_Introduction.md
-  - 2. Storage-Elevation Analysis: 01_Storage_Elevation_Analysis.md
-  - 3. IDF Analysis (Panvel): 02_IDF_Analysis_Panvel.md
-  - 4. Basin Hydrology Prep: 03_DBA_Basin_HydroPrep.md
-  - 5. Dam-Break Analysis: 04_DamBreak_Analysis.md
-  - 6. Results & Maps: 05_Maps_GoogleColab.md
+  - 1. Introduction: 01_Introduction.md
+  - 2. Description of the Dam / Reservoir System: 02_Description_of_the_Dam_Reservoir_System.md
+  - 3. IDF Analysis and Design Storm: 03_IDF_Analysis_and_Design_Storm.md
+  - 4. Hydrology and HEC-HMS Methodology: 04_Hydrology_and_HEC-HMS_Methodology.md
+  - 5. Dam-Break Analysis: 05_Dam-Break_Analysis.md
+  - 6. HEC-RAS Breach Simulation Methodology: 06_HEC-RAS_Breach_Simulation_Methodology.md
+  - 7. Results and Discussion: 07_Results_and_Discussion.md
+  - Annexure I - Reservoir EAC Table: Annexure_I_Reservoir_Elevation_Area_Capacity_Table.md
+  - Annexure II - IDF Computation Tables: Annexure_II_IDF_Computation_Tables.md
+  - Annexure III - ABM Storm Distribution: Annexure_III_Alternating_Block_Method_Storm_Distribution.md
+  - Annexure IV - Froehlich Breach Parameter Derivation: Annexure_IV_Froehlich_2008_Breach_Parameter_Derivation.md

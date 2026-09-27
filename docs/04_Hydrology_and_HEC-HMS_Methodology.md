@@ -1,4 +1,4 @@
-# Hydrology and HEC-HMS Methodology
+# 4. Hydrology and HEC-HMS Methodology
 
 ## 4.1 Overview of Hydrologic Assessment
 
@@ -50,8 +50,6 @@ The meteorological model (100Yr_Storm_IDF) was configured as:
 
 - Baseflow: Not included (conservative assumption for design flood)
 
-*Table 7: HEC-HMS Model Configuration Summary*
-
 | **Parameter**               | **Value**                              |
 |-----------------------------|----------------------------------------|
 | **Project**                 | Dehrang_DesignFloodDBA                 |
@@ -65,6 +63,7 @@ The meteorological model (100Yr_Storm_IDF) was configured as:
 | **Transform Method**        | SCS Unit Hydrograph (Standard PRF 484) |
 | **Baseflow**                | None                                   |
 
+*Table 7: HEC-HMS Model Configuration Summary*
 
 ## 4.3 Watershed Physical Characteristics
 
@@ -74,8 +73,6 @@ GeoHMS was used to extract the physical parameters for each subbasin
 from the conditioned DEM. These parameters drive the SCS lag time
 computation and characterise the hydrologic response of each drainage
 unit. The full set of extracted parameters is presented in Table 8.
-
-*Table 8: HEC-HMS Subbasin Physical Characteristics (GeoHMS - Copernicus
 
 | **Parameter**                  | **Subbasin-1** | **Subbasin-2** | **Subbasin-3** | **Units** |
 |--------------------------------|----------------|----------------|----------------|-----------|
@@ -91,6 +88,7 @@ unit. The full set of extracted parameters is presented in Table 8.
 | **Elongation Ratio**           | 0.72240        | 0.47048        | 0.60651        | \-        |
 | **Drainage Density**           | 0.10647        | 0.15787        | 0.19021        | km/km2    |
 
+*Table 8: HEC-HMS Subbasin Physical Characteristics (GeoHMS - Copernicus
 DEM)*
 
 Subbasin-3 is the dominant hydrologic unit with the steepest terrain
@@ -111,9 +109,7 @@ Raigad district. The Dehrang catchment soils are predominantly
 Hydrologic Groups B and C (lateritic and basaltic geology). AMC-II
 (average antecedent moisture) conditions were applied, appropriate for a
 mid-monsoon design event. The Initial Abstraction (Ia) was computed
-using the standard SCS formula $$ I_a = 0.2S $$, where $$ S = \frac{25400}{CN} - 254 $$.
-
-*Table 9: SCS Curve Number and Initial Abstraction by Subbasin*
+using the standard SCS formula $$ I_a = 0.2 \cdot S \quad \text{where} \quad S = \frac{25400}{CN} - 254 $$
 
 | **Subbasin**   | **Curve Number (CN)** | **Initial Abstraction Ia (mm)** | **Impervious (%)** |
 |----------------|-----------------------|---------------------------------|--------------------|
@@ -121,6 +117,7 @@ using the standard SCS formula $$ I_a = 0.2S $$, where $$ S = \frac{25400}{CN} -
 | **Subbasin-2** | **80.28**             | 12.48                           | 0.0                |
 | **Subbasin-3** | **76.51**             | 15.60                           | 0.0                |
 
+*Table 9: SCS Curve Number and Initial Abstraction by Subbasin*
 
 Subbasin-2 has the highest CN (80.28), reflecting a greater proportion
 of developed/low-permeability land cover and/or heavier soils (Group C).
@@ -137,8 +134,6 @@ reach; the weighting parameter X = 0.4811 indicates near-equal weighting
 of inflow and outflow, consistent with a relatively steep, short channel
 segment.
 
-*Table 10: Reach-1 Physical and Muskingum Routing Parameters*
-
 | **Parameter**            | **Value**          | **Units** |
 |--------------------------|--------------------|-----------|
 | **Reach Name**           | Reach-1            | \-        |
@@ -151,6 +146,7 @@ segment.
 | **Number of Subreaches** | 1                  | \-        |
 | **Initial Type**         | Discharge = Inflow | \-        |
 
+*Table 10: Reach-1 Physical and Muskingum Routing Parameters*
 
 ## 4.4 Rainfall Input and Design Storm
 
@@ -176,14 +172,13 @@ standard SCS methodology. The lag times reflect the steep terrain and
 short flowpaths of the Western Ghats catchment, resulting in rapid
 hydrologic response.
 
-*Table 11: SCS Unit Hydrograph Lag Time and Time of Concentration by
-
 | **Subbasin**   | **Graph Type**     | **SCS Lag Time (min)** | **Tc (min)** |
 |----------------|--------------------|------------------------|--------------|
 | **Subbasin-1** | Standard (PRF 484) | **125.72**             | 209.53       |
 | **Subbasin-2** | Standard (PRF 484) | **43.78**              | 72.97        |
 | **Subbasin-3** | Standard (PRF 484) | **77.14**              | 128.57       |
 
+*Table 11: SCS Unit Hydrograph Lag Time and Time of Concentration by
 Subbasin*
 
 Subbasin-1 has the longest lag time (125.72 min, Tc = 209.53 min)
@@ -217,8 +212,6 @@ reflecting the combined and routed flows from Subbasin-1 and Subbasin-3.
 Subbasin-2 contributes a secondary peak of 21.996 m3/s at Hour 12,
 slightly ahead of the main peak, consistent with its shorter lag time.
 
-*Table 12: HEC-HMS Summary Results - Dehrang Reservoir Inflow (Sink-1)*
-
 | **Parameter**               | **Value**                            |
 |-----------------------------|--------------------------------------|
 | **Sink**                    | Sink-1 (Reservoir Inflow)            |
@@ -232,8 +225,7 @@ slightly ahead of the main peak, consistent with its shorter lag time.
 | **Meteorologic Model**      | 100Yr_Storm_IDF (SCS Type II, 24-hr) |
 | **Control Specifications**  | Control IDF                          |
 
-
-*Table 13: HEC-HMS Hourly Inflow Hydrograph at Reservoir (Sink-1) -
+*Table 12: HEC-HMS Summary Results - Dehrang Reservoir Inflow (Sink-1)*
 
 | **Date**      | **Time**  | **Inflow from Reach-1 (m3/s)** | **Inflow from Subbasin-2 (m3/s)** | **Total Inflow to Reservoir (m3/s)** |
 |---------------|-----------|--------------------------------|-----------------------------------|--------------------------------------|
@@ -263,11 +255,10 @@ slightly ahead of the main peak, consistent with its shorter lag time.
 | 01Jun2025     | 23:00     | 50.0502                        | 1.0699                            | 51.1201                              |
 | 02Jun2025     | 00:00     | 46.4185                        | 1.0255                            | 47.4440                              |
 
+*Table 13: HEC-HMS Hourly Inflow Hydrograph at Reservoir (Sink-1) -
 100-Year 24-Hour Storm \[Peak row highlighted\]*
 
 ![](assets/ch04_fig4.x_scs_typeII_inflow_hydrograph.png)
-
-![Figure 3.3: 100-Year Design Storm Hydrograph](assets/ch03_fig3.3_abm_design_storm_hyetograph.png)
 
 *Figure 3.3: 100-Year Design Storm Hydrograph*
 
