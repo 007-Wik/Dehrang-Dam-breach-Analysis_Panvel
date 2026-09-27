@@ -1,0 +1,1373 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dam Break Analysis of Dehrang Dam, Panvel — CCCSS, Shivaji University, Kolhapur">
+      
+      
+        <meta name="author" content="Satwik Kamlakar Udupi, Agriculture Er.">
+      
+      
+        <link rel="canonical" href="https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/06_HEC-RAS_Breach_Simulation_Methodology/">
+      
+      
+        <link rel="prev" href="../05_Dam-Break_Analysis/">
+      
+      
+        <link rel="next" href="../07_Results_and_Discussion/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>6. HEC-RAS Breach Simulation Methodology - Dehrang Dam Break Analysis</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-hec-ras-breach-simulation-methodology" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Dehrang Dam Break Analysis" class="md-header__button md-logo" aria-label="Dehrang Dam Break Analysis" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dehrang Dam Break Analysis
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6. HEC-RAS Breach Simulation Methodology
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/007-Wik/Dehrang-Dam-breach-Analysis_Panvel" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    007-Wik/Dehrang-Dam-breach-Analysis_Panvel
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Dehrang Dam Break Analysis" class="md-nav__button md-logo" aria-label="Dehrang Dam Break Analysis" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Dehrang Dam Break Analysis
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/007-Wik/Dehrang-Dam-breach-Analysis_Panvel" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    007-Wik/Dehrang-Dam-breach-Analysis_Panvel
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Description_of_the_Dam_Reservoir_System/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Description of the Dam / Reservoir System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_IDF_Analysis_and_Design_Storm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. IDF Analysis and Design Storm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Hydrology_and_HEC-HMS_Methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Hydrology and HEC-HMS Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Dam-Break_Analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Dam-Break Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. HEC-RAS Breach Simulation Methodology
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. HEC-RAS Breach Simulation Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61-2d-hydraulic-model-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 2D Hydraulic Model Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 2D Hydraulic Model Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#611-model-domain-and-mesh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.1 Model Domain and Mesh
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612-boundary-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.2 Boundary Conditions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#613-land-cover-and-mannings-roughness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.3 Land Cover and Manning's Roughness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62-breach-parameterisation-froehlich-2008-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Breach Parameterisation - Froehlich (2008) Method
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.2 Breach Parameterisation - Froehlich (2008) Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#621-overtopping-failure-plan-deh-ovtp-pl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.1 Overtopping Failure - Plan: DEH-OVTP-PL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#622-piping-failure-plan-deh-pipg-dba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.2 Piping Failure - Plan: DEH-PIPG-DBA
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63-simulation-controls-and-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Simulation Controls and Execution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-flood-hazard-vulnerability-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Flood Hazard Vulnerability Classification
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_Results_and_Discussion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Results and Discussion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Annexure_I_Reservoir_Elevation_Area_Capacity_Table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annexure I - Reservoir EAC Table
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Annexure_II_IDF_Computation_Tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annexure II - IDF Computation Tables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Annexure_III_Alternating_Block_Method_Storm_Distribution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annexure III - ABM Storm Distribution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Annexure_IV_Froehlich_2008_Breach_Parameter_Derivation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annexure IV - Froehlich Breach Parameter Derivation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Output_Tables_and_Datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Output Tables & Datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Original_Analysis_Notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Original Analysis Notebooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="6-hec-ras-breach-simulation-methodology">6. HEC-RAS Breach Simulation Methodology<a class="headerlink" href="#6-hec-ras-breach-simulation-methodology" title="Permanent link">&para;</a></h1>
+<p>This section details the complete 2D hydraulic model setup in HEC-RAS
+6.6, including mesh construction, terrain and roughness assignment,
+breach parameterisation using Froehlich (2008) empirical equations, and
+simulation execution procedures for both failure scenarios.</p>
+<h2 id="61-2d-hydraulic-model-overview">6.1 2D Hydraulic Model Overview<a class="headerlink" href="#61-2d-hydraulic-model-overview" title="Permanent link">&para;</a></h2>
+<p>The HEC-RAS model for Dehrang Dam comprises two primary hydraulic
+elements: a Storage Area (SA) representing the reservoir and an
+unstructured 2D Flow Area (2D FA) covering the downstream floodplain
+from the dam toe to the tidal influence boundary near Panvel Creek.
+These are connected via an SA-to-2D Area hydraulic structure (SA2D
+Conn 1) at which the breach is specified.</p>
+<h3 id="611-model-domain-and-mesh">6.1.1 Model Domain and Mesh<a class="headerlink" href="#611-model-domain-and-mesh" title="Permanent link">&para;</a></h3>
+<p>The 2D Flow Area mesh was constructed from the hydrologically
+conditioned Copernicus GLO-30 DEM. The computational mesh covers the
+Gadhi River valley from the dam toe through all downstream settlements
+likely to be impacted by dam breach flows. Mesh refinement was applied
+in areas of higher hydraulic complexity including the channel thalweg,
+road embankments acting as flow constrictions, and the immediate dam toe
+area where the breach outflow undergoes rapid expansion.</p>
+<ul>
+<li>
+<p>Terrain: Copernicus DEM GLO-30 (30 m horizontal resolution, WGS84 UTM
+  Zone 43N)</p>
+</li>
+<li>
+<p>Mesh type: Unstructured (mixed triangular and quadrilateral elements)</p>
+</li>
+<li>
+<p>Solver: 2D Unsteady Diffusion Wave Equation Set (Fastest Mode); 8
+  solver cores; 1-second computational time step; 10-minute output
+  intervals</p>
+</li>
+<li>
+<p>Computational time step: 10 seconds (adaptive during breach phase)</p>
+</li>
+</ul>
+<h3 id="612-boundary-conditions">6.1.2 Boundary Conditions<a class="headerlink" href="#612-boundary-conditions" title="Permanent link">&para;</a></h3>
+<p>The following boundary conditions were applied consistently across both
+simulation plans:</p>
+<ul>
+<li>
+<p>Upstream (SA Inflow): HEC-HMS design flood hydrograph (600.4 m3/s
+  peak) for the overtopping scenario; constant 3 m3/s baseflow for the
+  piping scenario</p>
+</li>
+<li>
+<p>Downstream (2D FA outlet): Normal depth boundary using the DEM-derived
+  longitudinal water surface slope at the downstream domain boundary</p>
+</li>
+<li>
+<p>Initial condition: Reservoir at FRL = 89.15 m MSL (piping plan) or at
+  90.0 m MSL (overtopping plan, consistent with rising storm conditions)</p>
+</li>
+<li>
+<p>Dry land initial conditions applied to the 2D flow area (no
+  pre-existing flood water in floodplain)</p>
+</li>
+</ul>
+<h3 id="613-land-cover-and-mannings-roughness">6.1.3 Land Cover and Manning's Roughness<a class="headerlink" href="#613-land-cover-and-mannings-roughness" title="Permanent link">&para;</a></h3>
+<p>Manning's roughness coefficient (n) values were spatially distributed
+across the 2D mesh based on the ESRI Living Atlas LULC classification.
+The roughness assignment follows standard HEC guidance for 2D models.
+Values used are summarised in Table 14.</p>
+<table>
+<thead>
+<tr>
+<th>ESA_Code</th>
+<th>name</th>
+<th><strong>n</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>Tree cover</td>
+<td>0.15</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Shrubland</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Grassland</td>
+<td>0.035</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Cropland</td>
+<td>0.045</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Built-up</td>
+<td>0.015</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Bare/sparse vegetation</td>
+<td>0.025</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Snow and ice</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>80</td>
+<td>Permanent water bodies</td>
+<td>0.03</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 14: Manning's Roughness Coefficients by LULC Class</em></p>
+<p>The channel thalweg of the Gadhi River was assigned a roughness value of
+n = 0.035 (natural channel with gravel bed and minimal vegetation),
+consistent with its steep gradient and cobble-gravel substrate typical
+of Western Ghats hill streams. Densely vegetated floodplain areas use n
+= 0.16 which substantially attenuates flood wave propagation in the
+riparian zone.</p>
+<h2 id="62-breach-parameterisation-froehlich-2008-method">6.2 Breach Parameterisation - Froehlich (2008) Method<a class="headerlink" href="#62-breach-parameterisation-froehlich-2008-method" title="Permanent link">&para;</a></h2>
+<p>Breach parameters for both failure scenarios were derived using the
+Froehlich (2008) empirical regression equations, the standard method
+recommended by CWC (2016) and CDSO (2018) for Indian dam safety
+analysis. Froehlich (2008) developed equations based on 74 case studies
+of dam failures, relating breach geometry and formation time to
+reservoir volume and breach height:</p>
+<div class="arithmatex">\[ B_{avg} = 0.1803 \cdot K_0 \cdot V_w^{0.32} \cdot H_b^{0.19} \quad (\text{m}) \]</div>
+<div class="arithmatex">\[ t_f = 0.0179 \cdot V_w^{0.53} \cdot H_b^{-0.90} \quad (\text{hr}) \]</div>
+<p><em>where: K0 = 1.0 (overtopping) or 0.7 (piping); Vw = volume of water
+(m3); Hb = breach height (m)</em></p>
+<p>For Dehrang Dam, the key input parameters are: <strong>V<sub>w</sub></strong> =
+2,351,580 m3 (gross storage at FRL from 2025 survey); for overtopping,
+Hb = 90.0 - 81.4 = 8.6 m (water surface above final breach invert); for
+piping, Hb = 89.15 - 75.40 = 13.75 m (full head from FRL to riverbed).
+Computed values closely match the entered model parameters as detailed
+below.</p>
+<h3 id="621-overtopping-failure-plan-deh-ovtp-pl">6.2.1 Overtopping Failure - Plan: DEH-OVTP-PL<a class="headerlink" href="#621-overtopping-failure-plan-deh-ovtp-pl" title="Permanent link">&para;</a></h3>
+<p>The overtopping breach was configured in HEC-RAS Plan DEH-OVTP-DBA. The
+SA-to-2D connection (SA2D Conn 1) represents the full 335 m dam
+alignment; the breach is centred at Station 159 m, corresponding to the
+lowest section of the earthen bund adjacent to the concrete spillway
+structure. Breach parameters are tabulated in Table 15.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SA Connection</strong></td>
+<td>SA2D Conn 1</td>
+</tr>
+<tr>
+<td><strong>Breach Centre Station</strong></td>
+<td>159 m</td>
+</tr>
+<tr>
+<td><strong>Final Bottom Width</strong></td>
+<td>34 m</td>
+</tr>
+<tr>
+<td><strong>Final Bottom Elevation</strong></td>
+<td>81.4 m MSL</td>
+</tr>
+<tr>
+<td><strong>Left Side Slope (H:V)</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Right Side Slope (H:V)</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Breach Weir Coefficient</strong></td>
+<td>1.44</td>
+</tr>
+<tr>
+<td><strong>Breach Formation Time</strong></td>
+<td>1.04 hrs</td>
+</tr>
+<tr>
+<td><strong>Failure Mode</strong></td>
+<td>Overtopping</td>
+</tr>
+<tr>
+<td><strong>Trigger WSE</strong></td>
+<td>90.0 m MSL (WS Elev trigger)</td>
+</tr>
+<tr>
+<td><strong>Starting Water Surface</strong></td>
+<td>90.0 m MSL</td>
+</tr>
+<tr>
+<td><strong>Parameterization Method</strong></td>
+<td>User Entered Data (Froehlich 2008 derived)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 15: Breach Parameters - Overtopping Failure Scenario (Plan:
+DEH-OVTP-PL)</em></p>
+<p>The overtopping breach triggers when the reservoir WSE reaches 90.0 m
+MSL (configured as a WS Elevation trigger in HEC-RAS). The breach erodes
+from the dam crest downward to the final bottom elevation of 81.4 m
+MSL - well above the riverbed - reflecting the typical behaviour of
+earthen dam overtopping failure where the breach is limited by the
+erosion-resistant core or by the extent of embankment material
+available. The 1.04-hour formation time reflects the rapid erosion
+expected under sustained overtopping of this compact embankment.</p>
+<h3 id="622-piping-failure-plan-deh-pipg-dba">6.2.2 Piping Failure - Plan: DEH-PIPG-DBA<a class="headerlink" href="#622-piping-failure-plan-deh-pipg-dba" title="Permanent link">&para;</a></h3>
+<p>The piping failure breach was configured in a separate HEC-RAS plan
+(DEH-PIPG-DBA) using the same SA-2D connection geometry. The piping
+mechanism is modelled using the User Entered Data breach method, with
+Froehlich (2008) empirical equations applied to compute breach
+parameters at the pool elevation of 89.15 m MSL (FRL). Initial piping
+initiates at elevation 81.5 m MSL, and the breach erodes to a final
+bottom elevation of 81.4 m MSL. The reservoir is pre-set at FRL (89.15 m
+MSL) with a constant baseflow of 3 m3/s and the breach trigger is set to
+initiate at 01 January 2025 01:00. Parameters are derived from Froehlich
+(2008) equations and are tabulated in Table 16.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SA Connection</strong></td>
+<td>SA2D Conn 1 (separate piping plan)</td>
+</tr>
+<tr>
+<td><strong>Breach Centre Station</strong></td>
+<td>159 m</td>
+</tr>
+<tr>
+<td><strong>Failure Mode</strong></td>
+<td>Piping (Internal Erosion)</td>
+</tr>
+<tr>
+<td><strong>Initial Piping Elevation</strong></td>
+<td>81.5 m MSL (initial piping elevation, mid-embankment)</td>
+</tr>
+<tr>
+<td><strong>Final Bottom Elevation</strong></td>
+<td>81.4 m MSL (embankment base erosion limit)</td>
+</tr>
+<tr>
+<td><strong>Final Bottom Width</strong></td>
+<td>33 m (Froehlich 2008: K0=0.7, Vw=2238.652x10^3 m3, Hb=7.75 m)</td>
+</tr>
+<tr>
+<td><strong>Left Side Slope (H:V)</strong></td>
+<td>1.4</td>
+</tr>
+<tr>
+<td><strong>Right Side Slope (H:V)</strong></td>
+<td>1.4</td>
+</tr>
+<tr>
+<td><strong>Piping Coefficient</strong></td>
+<td>0.5</td>
+</tr>
+<tr>
+<td><strong>Breach Formation Time</strong></td>
+<td>0.98 hrs (Froehlich 2008, Vw=2238.652x10^3 m3, Hb=7.75 m)</td>
+</tr>
+<tr>
+<td><strong>Trigger</strong></td>
+<td>WS Elevation trigger at 89.15 m MSL (FRL); constant baseflow of 3 m3/s</td>
+</tr>
+<tr>
+<td><strong>Starting Water Surface</strong></td>
+<td>89.15 m MSL (FRL)</td>
+</tr>
+<tr>
+<td><strong>Parameterization Method</strong></td>
+<td>Froehlich (2008) Empirical Equations</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 16: Breach Parameters - Piping Failure Scenario (Plan:
+DEH-PIPG-DBA, Froehlich 2008 Derived)</em></p>
+<p>The piping breach initiates at elevation 81.5 m MSL and erodes to a
+final invert of 81.4 m MSL, with a final bottom width of 33 m and 1H:1V
+side slopes. The breach formation time of 0.98 hours (per Froehlich
+2008) is comparable to the overtopping case. Unlike the overtopping
+scenario, the piping failure initiates under fair-weather conditions
+from FRL (89.15 m MSL) without any storm forcing, making it more
+dangerous from an emergency warning perspective.</p>
+<h2 id="63-simulation-controls-and-execution">6.3 Simulation Controls and Execution<a class="headerlink" href="#63-simulation-controls-and-execution" title="Permanent link">&para;</a></h2>
+<p>Both simulation plans were executed with consistent computational
+settings to enable direct comparison of results:</p>
+<ul>
+<li>
+<p>Overtopping scenario: 31 May 2025 2400 to 02 June 2025 1200 (36
+  hours); Piping scenario: 01 January 2025 0100 to 03 January 2025 0100
+  (48 hours). Both simulation windows are sufficient to capture full
+  flood wave propagation through the study domain and reservoir
+  drawdown.</p>
+</li>
+<li>
+<p>Computational time step: 1 second (fixed); this fine time step ensures
+  numerical stability and accurate capture of the rapidly varying breach
+  hydrograph during breach formation and peak outflow phases</p>
+</li>
+<li>
+<p>Mapping output interval: 10 minutes (for all spatial raster outputs)</p>
+</li>
+<li>
+<p>Time series output interval: 10 minutes (for hydrograph and stage
+  time-series extraction at all monitoring locations and SA connections)</p>
+</li>
+<li>
+<p>2D solver: 2D Unsteady Diffusion Wave Equation Set (fastest mode)
+  applied uniformly across the entire 2D mesh domain, consistent with
+  the Diffusion Wave approximation of the shallow water equations. This
+  solver neglects the convective acceleration terms in the momentum
+  equation, providing computationally efficient and stable solutions for
+  dam-break flood routing where flow is predominantly driven by pressure
+  and gravity gradients.</p>
+</li>
+<li>
+<p>Warmup period: 2-hour pre-breach simulation to establish steady
+  initial conditions before breach trigger</p>
+</li>
+</ul>
+<p>Output products generated for each simulation plan:</p>
+<ol>
+<li>
+<p>Maximum Water Surface Elevation (WSE) raster (m MSL)</p>
+</li>
+<li>
+<p>Maximum Water Depth raster (m above ground)</p>
+</li>
+<li>
+<p>Maximum Depth-Averaged Velocity raster (m/s)</p>
+</li>
+<li>
+<p>Flood Wave Arrival Time raster (hours from breach initiation)</p>
+</li>
+<li>
+<p>Depth x Velocity (D x V) product raster for hazard classification</p>
+</li>
+<li>
+<p>Inundation boundary polygon (shapefile) at 0.1 m depth threshold</p>
+</li>
+<li>
+<p>Time-series hydrographs at key downstream cross-sections and
+    settlement boundaries</p>
+</li>
+</ol>
+<h2 id="64-flood-hazard-vulnerability-classification">6.4 Flood Hazard Vulnerability Classification<a class="headerlink" href="#64-flood-hazard-vulnerability-classification" title="Permanent link">&para;</a></h2>
+<p>Flood hazard maps were produced for both breach scenarios using the
+Depth x Velocity (D x V) product methodology, which integrates both
+depth and dynamic force of floodwaters into a single hazard indicator.
+This approach is standard in CWC (2016) EAP guidance and is consistent
+with international dam safety practice (ACER, 1988; ANCOLD, 2003). The
+six-tier hazard classification applied is presented in Table 17.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Hazard Class</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>D x V Limit</strong></th>
+<th><strong>Limiting Depth (m)</strong></th>
+<th><strong>Limiting Velocity (m/s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>H1</strong></td>
+<td>Generally safe for vehicles and people</td>
+<td>D x V \&lt; 0.3</td>
+<td>0.3 m</td>
+<td>2.0 m/s</td>
+</tr>
+<tr>
+<td><strong>H2</strong></td>
+<td>Unsafe for small vehicles</td>
+<td>D x V \&lt; 0.6</td>
+<td>0.5 m</td>
+<td>2.0 m/s</td>
+</tr>
+<tr>
+<td><strong>H3</strong></td>
+<td>Unsafe for vehicles, children and the elderly</td>
+<td>D x V \&lt; 0.6</td>
+<td>1.2 m</td>
+<td>2.0 m/s</td>
+</tr>
+<tr>
+<td><strong>H4</strong></td>
+<td>Unsafe for vehicles and people</td>
+<td>D x V \&lt; 1.0</td>
+<td>2.0 m</td>
+<td>2.0 m/s</td>
+</tr>
+<tr>
+<td><strong>H5</strong></td>
+<td>Unsafe for vehicles and people; less robust buildings subject to failure</td>
+<td>D x V \&lt; 4.0</td>
+<td>4.0 m</td>
+<td>4.0 m/s</td>
+</tr>
+<tr>
+<td><strong>H6</strong></td>
+<td>All building types considered vulnerable to failure</td>
+<td>D x V &gt; 4.0</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 17: Flood Hazard Vulnerability Classification - D x V Thresholds</em></p>
+<p>The hazard class H1 (D x V \&lt; 0.3) defines zones that are generally safe
+for orderly evacuation of vehicles and ambulatory adults. Class H2 (D x
+V \&lt; 0.6) is unsafe for small vehicles and should be evacuated before
+flood arrival. Classes H3 and H4 are dangerous to all people and
+represent the primary evacuation priority zone in an Emergency Action
+Plan. Classes H5 and H6 represent catastrophic flood conditions where
+structural failure of buildings is likely and survival without
+evacuation is improbable.</p>
+<p>The D x V raster was computed as a cell-by-cell product of the Maximum
+Depth and Maximum Velocity rasters from each simulation. Hazard class
+boundaries were applied using GIS reclassification. Areas where maximum
+depth was less than 0.1 m were excluded from the hazard mapping as no
+significant hazard is posed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Hazard classes should be interpreted in conjunction with
+flood wave arrival times. An area classified H4 that has a 4-hour
+arrival time is more manageable for evacuation than the same hazard
+class with a 30-minute arrival time. EAP preparation must account for
+both hazard severity and available warning time.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../05_Dam-Break_Analysis/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5. Dam-Break Analysis">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                5. Dam-Break Analysis
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../07_Results_and_Discussion/" class="md-footer__link md-footer__link--next" aria-label="Next: 7. Results and Discussion">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                7. Results and Discussion
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Satwik Kamlakar Udupi (CCCSS, Shivaji University, Kolhapur) / Panvel Municipal Corporation
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
