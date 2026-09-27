@@ -15,10 +15,15 @@
 ```
 
 **Dehrang Dam, Raigad District, Maharashtra, India**
-*Earthen Dam · Owner: Panvel Municipal Corporation · Commissioned 1957*
+*Earthen Dam · Client: Panvel Municipal Corporation · Commissioned 1957*
+
+* **Developer & Engineer:** **Satwik Kamlakar Udupi, Agriculture Er.**
+* **Institution:** **Centre for Climate Change and Sustainability Studies (CCCSS), Shivaji University, Kolhapur**
+* **Client / Authority:** **Panvel Municipal Corporation, Government of Maharashtra**
 
 ---
 
+[![Documentation](https://img.shields.io/badge/Docs-Live%20Portal-blue?style=flat-square&logo=materialformkdocs)](https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-Ready-F9AB00?style=flat-square&logo=googlecolab&logoColor=white)

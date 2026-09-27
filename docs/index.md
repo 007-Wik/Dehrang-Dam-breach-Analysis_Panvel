@@ -2,8 +2,9 @@
 
 **Report on Dam Break Analysis of Dehrang Dam, Panvel, Dist. Raigad, Maharashtra**
 
-* **Submitted to:** Panvel Municipal Corporation, Government of Maharashtra
-* **Prepared by:** Centre for Climate Change and Sustainability Studies, Shivaji University, Kolhapur
+* **Developer & Engineer:** Satwik Kamlakar Udupi, Agriculture Er.
+* **Institution:** Centre for Climate Change and Sustainability Studies (CCCSS), Shivaji University, Kolhapur
+* **Client / Authority:** Panvel Municipal Corporation, Government of Maharashtra
 * **Date:** May 2025
 
 ---
@@ -12,9 +13,9 @@
 
 This documentation portal presents the complete, unabridged hydraulic and hydrologic assessment of the Dehrang Dam break scenarios (Overtopping and Piping) simulated using HEC-HMS and HEC-RAS 2D (6.6).
 
-Navigate through the 7 core chapters and 4 technical annexures:
+Navigate through the core chapters, technical annexures, derived datasets, and analysis notebooks:
 
-| Chapter / Annexure | Description | Direct Link |
+| Section | Description | Direct Link |
 |---|---|---|
 | **Chapter 1** | General background, objectives, scope of work, and project limitations | [1. Introduction](01_Introduction.md) |
 | **Chapter 2** | Dehrang dam salient features (Table 1), spillway, and reservoir system | [2. Description of the Dam / Reservoir System](02_Description_of_the_Dam_Reservoir_System.md) |
@@ -27,6 +28,8 @@ Navigate through the 7 core chapters and 4 technical annexures:
 | **Annexure II** | 31-year IMD rainfall records, Weibull plotting positions, and Gumbel EV-I calculation tables | [Annexure II - IDF Computation Tables](Annexure_II_IDF_Computation_Tables.md) |
 | **Annexure III** | Complete 24-hour Alternating Block Method (ABM) design storm temporal distribution | [Annexure III - ABM Storm Distribution](Annexure_III_Alternating_Block_Method_Storm_Distribution.md) |
 | **Annexure IV** | Froehlich (2008) parameter derivations and the complete 10-map inundation & hazard portfolio | [Annexure IV - Froehlich Breach Parameter Derivation](Annexure_IV_Froehlich_2008_Breach_Parameter_Derivation.md) |
+| **Output Datasets** | View & download derived Storage-Elevation tables (.xlsx, .csv) and 9-sheet IDF workbook (.xlsx) | [Output Tables & Datasets](Output_Tables_and_Datasets.md) |
+| **Scripts & Notebooks**| View, download, and execute sanitized Jupyter notebooks (.ipynb) and standalone Python scripts | [Original Analysis Notebooks](Original_Analysis_Notebooks.md) |
 
 ---
 
@@ -92,3 +95,5 @@ Navigate through the 7 core chapters and 4 technical annexures:
 | — | [**Annexure II - IDF Computation Tables**](Annexure_II_IDF_Computation_Tables.md) | 49-51 |
 | — | [**Annexure III - Alternating Block Method Storm Distribution**](Annexure_III_Alternating_Block_Method_Storm_Distribution.md) | 52-53 |
 | — | [**Annexure IV - Froehlich (2008) Breach Parameter Derivation**](Annexure_IV_Froehlich_2008_Breach_Parameter_Derivation.md) | 54 |
+| — | [**Derived Output Tables & Engineering Datasets**](Output_Tables_and_Datasets.md) | Derived Workbooks |
+| — | [**Original Analysis Notebooks & Scripts**](Original_Analysis_Notebooks.md) | Computation Scripts |

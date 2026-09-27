@@ -1,5 +1,8 @@
 site_name: Dehrang Dam Break Analysis
 site_url: https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/
+site_author: "Satwik Kamlakar Udupi, Agriculture Er."
+site_description: "Dam Break Analysis of Dehrang Dam, Panvel — CCCSS, Shivaji University, Kolhapur"
+copyright: "Copyright &copy; 2025 Satwik Kamlakar Udupi (CCCSS, Shivaji University, Kolhapur) / Panvel Municipal Corporation"
 repo_url: https://github.com/007-Wik/Dehrang-Dam-breach-Analysis_Panvel
 repo_name: 007-Wik/Dehrang-Dam-breach-Analysis_Panvel
 
@@ -69,3 +72,5 @@ nav:
   - Annexure II - IDF Computation Tables: Annexure_II_IDF_Computation_Tables.md
   - Annexure III - ABM Storm Distribution: Annexure_III_Alternating_Block_Method_Storm_Distribution.md
   - Annexure IV - Froehlich Breach Parameter Derivation: Annexure_IV_Froehlich_2008_Breach_Parameter_Derivation.md
+  - Output Tables & Datasets: Output_Tables_and_Datasets.md
+  - Original Analysis Notebooks: Original_Analysis_Notebooks.md
