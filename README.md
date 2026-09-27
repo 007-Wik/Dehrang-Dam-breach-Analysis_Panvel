@@ -21,7 +21,7 @@
 *Earthen Dam · Client: Panvel Municipal Corporation · Commissioned 1957*
 
 [![Client](https://img.shields.io/badge/Client-Panvel%20Municipal%20Corporation-0078D4?style=for-the-badge&logo=civicrm&logoColor=white)](https://panvelcorporation.com/)
-[![Engineer](https://img.shields.io/badge/Engineer-Satwik%20Kamlakar%20Udupi%20%7C%20Agri%20Er.-107C41?style=for-the-badge&logo=academia&logoColor=white)](#-developer--engineering-team)
+[![Engineer](https://img.shields.io/badge/Engineer-Satwik%20Kamlakar%20Udupi%20%7C%20Agri%20Er.-107C41?style=for-the-badge&logo=academia&logoColor=white)](#developer--engineering-team)
 [![Institution](https://img.shields.io/badge/Institution-CCCSS%2C%20Shivaji%20University-6A1B9A?style=for-the-badge&logo=google-scholar&logoColor=white)](https://www.unishivaji.ac.in/)
 
 [![Documentation Portal](https://img.shields.io/badge/Docs-Live%20Portal-0078D4?style=flat-square&logo=materialformkdocs&logoColor=white)](https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/)
@@ -48,6 +48,7 @@
 
 ---
 
+<a id="developer--engineering-team"></a>
 ## 🏛️ Developer & Engineering Team
 
 * **Developer & Lead Engineer:** **Satwik Kamlakar Udupi, Agriculture Er.**
