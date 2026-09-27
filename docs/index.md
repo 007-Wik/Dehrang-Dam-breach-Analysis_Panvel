@@ -28,7 +28,7 @@
 
 ---
 
-## 🏛️ Project & Engineering Attribution
+## 🏛️ Developer & Engineering Attribution {: #developer--engineering-team }
 
 > [!NOTE]
 > **Authoritative Technical Assessment & Institutional Credits:**
