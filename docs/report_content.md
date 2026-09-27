@@ -1,9 +1,0 @@
-# Full Dam Break Analysis Report
-
-The full highly-formatted report (which includes complex tables, equations, indexing, and high-resolution maps) is best viewed in its original PDF format.
-
-[📄 **Download Full PDF Report**](assets/DBA_Dehrang_Dam_Report.pdf)
-
-<iframe src="assets/DBA_Dehrang_Dam_Report.pdf" width="100%" height="900px" style="border: none;">
-    This browser does not support PDFs. Please download the PDF to view it.
-</iframe>

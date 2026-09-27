@@ -8,13 +8,24 @@ theme:
     - toc.integrate
 plugins:
   - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 nav:
   - Home: index.md
-  - Full Report: report_content.md
-  - Analysis Chapters:
-      - 1. Storage Elevation Analysis: 01_Storage_Elevation_Analysis.md
-      - 2. DBA Basin HydroPrep: 02_DBA_Basin_HydroPrep.md
-      - 3. DamBreak Analysis: 03_DamBreak_Analysis.md
-      - 4. IDF Analysis Panvel: 04_IDF_Analysis_Panvel.md
-      - 5. Maps Generation (Colab): 05_Maps_GoogleColab.md
-  - Interactive Maps: maps.md
+  - 1. Introduction: 00_Introduction.md
+  - 2. Storage-Elevation Analysis: 01_Storage_Elevation_Analysis.md
+  - 3. IDF Analysis (Panvel): 02_IDF_Analysis_Panvel.md
+  - 4. Basin Hydrology Prep: 03_DBA_Basin_HydroPrep.md
+  - 5. Dam-Break Analysis: 04_DamBreak_Analysis.md
+  - 6. Results & Maps: 05_Maps_GoogleColab.md
