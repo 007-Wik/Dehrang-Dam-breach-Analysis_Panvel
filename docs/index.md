@@ -11,33 +11,10 @@
  PANVEL MUNICIPAL CORPORATION · DIST. RAIGAD, MAHARASHTRA
 ```
 
-# Dam Break Analysis of Dehrang Dam, Panvel
-### Comprehensive Hydrological Modeling & 2D Breach Inundation Mapping
-
-[![Client](https://img.shields.io/badge/Client-Panvel%20Municipal%20Corporation-0078D4?style=for-the-badge&logo=civicrm&logoColor=white)](https://panvelcorporation.com/)
-[![Engineer](https://img.shields.io/badge/Engineer-Satwik%20Kamlakar%20Udupi%20%7C%20Agri%20Er.-107C41?style=for-the-badge&logo=academia&logoColor=white)](#developer--engineering-team)
-[![Institution](https://img.shields.io/badge/Institution-CCCSS%2C%20Shivaji%20University-6A1B9A?style=for-the-badge&logo=google-scholar&logoColor=white)](https://www.unishivaji.ac.in/)
-
-[![HEC-RAS](https://img.shields.io/badge/HEC--RAS%202D-v6.6%20Breach%20Model-E65100?style=flat-square&logo=wave&logoColor=white)](06_HEC-RAS_Breach_Simulation_Methodology.md)
-[![HEC-HMS](https://img.shields.io/badge/HEC--HMS-v4.10%20Design%20Flood-1565C0?style=flat-square&logo=water&logoColor=white)](04_Hydrology_and_HEC-HMS_Methodology.md)
-[![Design Standard](https://img.shields.io/badge/Standard-IS%2011223%20%7C%20CWC%201989-455A64?style=flat-square)](03_IDF_Analysis_and_Design_Storm.md)
-[![License](https://img.shields.io/badge/License-MIT-388E3C?style=flat-square)](https://opensource.org/licenses/MIT)
-
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-Array%20Ops-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![SciPy](https://img.shields.io/badge/SciPy-Gumbel%20EV--I-8CAAE6?style=flat-square&logo=scipy&logoColor=white)](https://scipy.org/)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-Plots%20%26%20Curves-11557c?style=flat-square&logo=python&logoColor=white)](https://matplotlib.org/)
-[![GeoPandas](https://img.shields.io/badge/GeoPandas-GIS%20Vectors-139C5A?style=flat-square&logo=geopandas&logoColor=white)](https://geopandas.org/)
-[![Rasterio](https://img.shields.io/badge/Rasterio-GeoTIFFs-2C3E50?style=flat-square&logo=osgeo&logoColor=white)](https://rasterio.readthedocs.io/)
-[![Folium](https://img.shields.io/badge/Folium-Leaflet%20Maps-77B829?style=flat-square&logo=leaflet&logoColor=white)](https://python-visualization.github.io/folium/)
-[![Cartopy](https://img.shields.io/badge/Cartopy-300%20DPI%20Maps-1F77B4?style=flat-square&logo=openstreetmap&logoColor=white)](https://scitools.org.uk/cartopy/)
-[![PySheds](https://img.shields.io/badge/PySheds-D8%20Routing-0288D1?style=flat-square)](https://github.com/mdbartos/pysheds)
-[![GEE](https://img.shields.io/badge/Earth%20Engine-GEE%20WorldCover-4285F4?style=flat-square&logo=googleearth&logoColor=white)](https://earthengine.google.com/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=flat-square&logo=jupyter&logoColor=white)](Original_Analysis_Notebooks.md)
-[![Google Colab](https://img.shields.io/badge/Google%20Colab-Ready-F9AB00?style=flat-square&logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
-
 </div>
+
+# Dam Break Analysis of Dehrang Dam, Panvel
+**Comprehensive Hydrological Modeling & 2D Breach Inundation Mapping**
 
 ---
 
