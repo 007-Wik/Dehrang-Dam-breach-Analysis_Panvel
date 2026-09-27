@@ -905,54 +905,54 @@ briefly described below:
 
 Map OT-01: Maximum Inundation Depth – Overtopping Failure (0–5+ m depth classification)
 
-![Map OT-01: Maximum Inundation Depth — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_FLOODDEPTH.jpg)
+![Map OT-01: Maximum Inundation Depth — Overtopping Failure](assets/annexIV_inundation_hazard_map_01.jpeg)
 *Map OT-01: Maximum Inundation Depth — Overtopping Failure (0–5+ m depth classification)*
 
 Map OT-02: Maximum Water Surface Elevation – Overtopping Failure
 
-![Map OT-02: Maximum Water Surface Elevation — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_WSE.jpg)
+![Map OT-02: Maximum Water Surface Elevation — Overtopping Failure](assets/annexIV_inundation_hazard_map_02.jpeg)
 *Map OT-02: Maximum Water Surface Elevation — Overtopping Failure*
 
 Map OT-03: Maximum Flow Velocity – Overtopping Failure
 
-![Map OT-03: Maximum Flow Velocity — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_VELOCITY.jpg)
+![Map OT-03: Maximum Flow Velocity — Overtopping Failure](assets/annexIV_inundation_hazard_map_03.jpeg)
 *Map OT-03: Maximum Flow Velocity — Overtopping Failure*
 
 Map OT-04: Maximum Arrival Time– Overtopping Failure
 
-![Map OT-04: Maximum Arrival Time — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_ARRIVALTIME.jpg)
+![Map OT-04: Maximum Arrival Time — Overtopping Failure](assets/annexIV_inundation_hazard_map_04.jpeg)
 *Map OT-04: Maximum Arrival Time — Overtopping Failure*
 
 Map OT-05: Composite Hazard Classification – Overtopping Failure (Low / Medium / High / Extreme)
 
-![Map OT-05: Composite Hazard Classification — Overtopping Failure](assets/maps/Overtopping%20maps/Mapping_Dehrang_DBA_BREACH_Ovetopping_FLOODHAZARD.jpg)
+![Map OT-05: Composite Hazard Classification — Overtopping Failure](assets/annexIV_inundation_hazard_map_05.jpeg)
 *Map OT-05: Composite Hazard Classification — Overtopping Failure (Low / Medium / High / Extreme)*
 
 **Map Suite – Piping Scenario (Scenario B):**
 
 Map PI-01: Maximum Inundation Depth – Piping Failure (0–5+ m depth classification)
 
-![Map PI-01: Maximum Inundation Depth — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_FLOODDEPTH.jpg)
+![Map PI-01: Maximum Inundation Depth — Piping Failure](assets/annexIV_inundation_hazard_map_06.jpeg)
 *Map PI-01: Maximum Inundation Depth — Piping Failure (0–5+ m depth classification)*
 
 Map PI-02: Maximum Water Surface Elevation – Piping Failure
 
-![Map PI-02: Maximum Water Surface Elevation — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_WSE.jpg)
+![Map PI-02: Maximum Water Surface Elevation — Piping Failure](assets/annexIV_inundation_hazard_map_07.jpeg)
 *Map PI-02: Maximum Water Surface Elevation — Piping Failure*
 
 Map PI-03: Maximum Flow Velocity – Piping Failure
 
-![Map PI-03: Maximum Flow Velocity — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_VELOCITY.jpg)
+![Map PI-03: Maximum Flow Velocity — Piping Failure](assets/annexIV_inundation_hazard_map_08.jpeg)
 *Map PI-03: Maximum Flow Velocity — Piping Failure*
 
 Map PI-04: Maximum Arrival Time – Piping Failure
 
-![Map PI-04: Maximum Arrival Time — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_ARRIVALTIME.jpg)
+![Map PI-04: Maximum Arrival Time — Piping Failure](assets/annexIV_inundation_hazard_map_09.jpeg)
 *Map PI-04: Maximum Arrival Time — Piping Failure*
 
 Map PI-05: Composite Hazard Classification – Piping Failure (Low / Medium / High / Extreme)
 
-![Map PI-05: Composite Hazard Classification — Piping Failure](assets/maps/Piping%20Maps/Mapping_Dehrang_DBA_BREACH_Piping_FLOODHAZARD.jpg)
+![Map PI-05: Composite Hazard Classification — Piping Failure](assets/annexIV_inundation_hazard_map_10.jpeg)
 *Map PI-05: Composite Hazard Classification — Piping Failure (Low / Medium / High / Extreme)*
 
 The inundation maps are appended at the end of this report. Downstream
