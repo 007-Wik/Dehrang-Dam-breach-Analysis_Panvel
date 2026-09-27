@@ -1,6 +1,44 @@
-﻿*.gdb/
-*.zip
-site/
+# Python & Environments
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+.env
+.venv
+venv/
+env/
 .cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# MkDocs build output
+site/
+
+# Data - raw inputs (confidential / large; keep local only)
+data/raw/*
+!data/raw/.gitkeep
+
+# Data - processed intermediates (keep local only)
+data/processed/*
+!data/processed/.gitkeep
+
+# Data - spatial layers (large rasters and archives; keep local only)
+data/spatial/*
+!data/spatial/.gitkeep
+
+# Large geodatabases and archives
+*.gdb/
+*.tar.gz
+*.zip
+
+# OS & IDEs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
