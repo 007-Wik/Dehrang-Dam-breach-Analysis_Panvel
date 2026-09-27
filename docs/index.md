@@ -1,11 +1,58 @@
+<div align="center">
+
+```
+██████╗ ███████╗██╗  ██╗██████╗  █████╗ ███╗   ██╗ ██████╗ 
+██╔══██╗██╔════╝██║  ██║██╔══██╗██╔══██╗████╗  ██║██╔════╝ 
+██║  ██║█████╗  ███████║██████╔╝███████║██╔██╗ ██║██║  ███╗
+██║  ██║██╔══╝  ██╔══██║██╔══██╗██╔══██║██║╚██╗██║██║   ██║
+██████╔╝███████╗██║  ██║██║  ██║██║  ██║██║ ╚████║╚██████╔╝
+╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+ DEHRANG DAM · HYDROLOGICAL & 2D DAM BREAK SIMULATION
+ PANVEL MUNICIPAL CORPORATION · DIST. RAIGAD, MAHARASHTRA
+```
+
 # Dam Break Analysis of Dehrang Dam, Panvel
+### Comprehensive Hydrological Modeling & 2D Breach Inundation Mapping
 
-**Report on Dam Break Analysis of Dehrang Dam, Panvel, Dist. Raigad, Maharashtra**
+[![Client](https://img.shields.io/badge/Client-Panvel%20Municipal%20Corporation-0078D4?style=for-the-badge&logo=civicrm&logoColor=white)](https://panvelcorporation.com/)
+[![Engineer](https://img.shields.io/badge/Engineer-Satwik%20Kamlakar%20Udupi%20%7C%20Agri%20Er.-107C41?style=for-the-badge&logo=academia&logoColor=white)](#developer--engineering-team)
+[![Institution](https://img.shields.io/badge/Institution-CCCSS%2C%20Shivaji%20University-6A1B9A?style=for-the-badge&logo=google-scholar&logoColor=white)](https://www.unishivaji.ac.in/)
 
-* **Developer & Engineer:** Satwik Kamlakar Udupi, Agriculture Er.
-* **Institution:** Centre for Climate Change and Sustainability Studies (CCCSS), Shivaji University, Kolhapur
-* **Client / Authority:** Panvel Municipal Corporation, Government of Maharashtra
-* **Date:** May 2025
+[![HEC-RAS](https://img.shields.io/badge/HEC--RAS%202D-v6.6%20Breach%20Model-E65100?style=flat-square&logo=wave&logoColor=white)](06_HEC-RAS_Breach_Simulation_Methodology.md)
+[![HEC-HMS](https://img.shields.io/badge/HEC--HMS-v4.10%20Design%20Flood-1565C0?style=flat-square&logo=water&logoColor=white)](04_Hydrology_and_HEC-HMS_Methodology.md)
+[![Design Standard](https://img.shields.io/badge/Standard-IS%2011223%20%7C%20CWC%201989-455A64?style=flat-square)](03_IDF_Analysis_and_Design_Storm.md)
+[![Python](https://img.shields.io/badge/Python-3.10%2B%20Geospatial-FFD43B?style=flat-square&logo=python&logoColor=3776AB)](Original_Analysis_Notebooks.md)
+[![License](https://img.shields.io/badge/License-MIT-388E3C?style=flat-square)](https://opensource.org/licenses/MIT)
+
+</div>
+
+---
+
+## 🏛️ Project & Engineering Attribution
+
+> [!NOTE]
+> **Authoritative Technical Assessment & Institutional Credits:**
+> 
+> * **Developer & Lead Engineer:** **Satwik Kamlakar Udupi, Agriculture Er.**
+> * **Executing Institution:** **Centre for Climate Change and Sustainability Studies (CCCSS), Shivaji University, Kolhapur**
+> * **Client & Sponsoring Authority:** **Panvel Municipal Corporation (PMC), Government of Maharashtra**
+> * **Dam Salient Asset:** Dehrang Earthen Dam (Commissioned 1957; Gated Spillway 86.65 m MSL; FRL 89.15 m MSL)
+> * **Study Date:** May 2025
+
+---
+
+## ⚡ Key Engineering Benchmarks
+
+| Parameter | Value | Reference / Derivation |
+|---|---|---|
+| **Catchment Area** | **$19.20 \text{ km}^2$** | D8 flow direction delineation from Copernicus 30 m DEM |
+| **Gross Storage Capacity (FRL 89.15 m)** | **$2.836 \times 10^6 \text{ m}^3$** ($2.836 \text{ MCM}$) | Pre-monsoon 2025 10×10 m sludge survey (3,193 boxes) |
+| **Current Live Storage (Post-Siltation)** | **$2.292 \times 10^6 \text{ m}^3$** | Silt accumulation = $544.14 \times 10^3 \text{ m}^3$ ($19.2\%$ loss) |
+| **100-Year 24-hr Design Storm ($P_{24}$)** | **$486.72 \text{ mm}$** | Gumbel EV-I frequency analysis of 31-yr IMD Panvel series |
+| **Peak Catchment Inflow ($Q_{\text{in}}$)** | **$186.40 \text{ m}^3/\text{s}$** | HEC-HMS 4.10 SCS Curve Number unit hydrograph routing |
+| **Overtopping Failure Peak Outflow** | **$277.62 \text{ m}^3/\text{s}$** | HEC-RAS 2D breach simulation (Breach width $B_{\text{avg}} = 29.8 \text{ m}$) |
+| **Piping Failure Peak Outflow** | **$221.78 \text{ m}^3/\text{s}$** | HEC-RAS 2D piping collapse ($t_f = 0.88 \text{ hr}$) |
+| **Downstream Warning Lead Time** | **$1.08 \text{ hours}$** | Flood wave arrival time to Panvel municipal limits |
 
 ---
 

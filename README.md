@@ -23,12 +23,18 @@
 
 ---
 
-[![Documentation](https://img.shields.io/badge/Docs-Live%20Portal-blue?style=flat-square&logo=materialformkdocs)](https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/)
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-Ready-F9AB00?style=flat-square&logo=googlecolab&logoColor=white)
-![GEE](https://img.shields.io/badge/Google%20Earth%20Engine-Integrated-4285F4?style=flat-square&logo=google&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+[![Documentation Portal](https://img.shields.io/badge/Docs-Live%20Portal-0078D4?style=for-the-badge&logo=materialformkdocs&logoColor=white)](https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/)
+[![Client](https://img.shields.io/badge/Client-Panvel%20Municipal%20Corporation-107C41?style=for-the-badge&logo=civicrm&logoColor=white)](https://panvelcorporation.com/)
+[![Institution](https://img.shields.io/badge/Institution-CCCSS%2C%20Shivaji%20University-6A1B9A?style=for-the-badge&logo=google-scholar&logoColor=white)](https://www.unishivaji.ac.in/)
+
+[![HEC-RAS](https://img.shields.io/badge/HEC--RAS%202D-v6.6%20Breach%20Model-E65100?style=flat-square&logo=wave&logoColor=white)](https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/06_HEC-RAS_Breach_Simulation_Methodology/)
+[![HEC-HMS](https://img.shields.io/badge/HEC--HMS-v4.10%20Design%20Flood-1565C0?style=flat-square&logo=water&logoColor=white)](https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/04_Hydrology_and_HEC-HMS_Methodology/)
+[![Design Standard](https://img.shields.io/badge/Standard-IS%2011223%20%7C%20CWC%201989-455A64?style=flat-square)](https://007-wik.github.io/Dehrang-Dam-breach-Analysis_Panvel/03_IDF_Analysis_and_Design_Storm/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=flat-square&logo=jupyter&logoColor=white)](docs/notebooks/)
+[![Google Colab](https://img.shields.io/badge/Google%20Colab-Ready-F9AB00?style=flat-square&logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
+[![GEE](https://img.shields.io/badge/Google%20Earth%20Engine-Integrated-4285F4?style=flat-square&logo=google&logoColor=white)](https://earthengine.google.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 </div>
 
